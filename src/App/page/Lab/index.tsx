@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Outlet } from "react-router-dom";
 import LinkList from "../../component/LinkList";
-import { LAB_LINKS, LinkInfo } from '../../../PART_9_LAB_Visualization_Analysis/Lab';
+import { LAB_LINKS, LinkInfo } from '../../../PART_10_LAB_Visualization_Analysis';
 
 import './index.css';
 

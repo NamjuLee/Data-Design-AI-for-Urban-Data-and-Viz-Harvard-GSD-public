@@ -68,7 +68,7 @@ For the introduction to the key topic: Data in Design, It helps you to understan
 
 [Data in Design](https://medium.com/@nj-namju/data-design-c21457dc8dc)
 
-![Data in Design](https://raw.githubusercontent.com/NamjuLee/Data-in-Design-AI-for-Urban-Data-and-Visualization-Harvard-GSD/main/public/reference/img/dataDesignSequence.jpg)
+![Data in Design](https://raw.githubusercontent.com/NamjuLee/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/main/public/reference/img/dataDesignSequence.jpg)
 
 
 #### 2. Programming and data processing
@@ -94,7 +94,7 @@ LAB 05 - Pandas
 
 #### 3. Vector and Raster as design data
 
-![](https://raw.githubusercontent.com/NamjuLee/Data-in-Design-AI-for-Urban-Data-and-Visualization-Harvard-GSD/main/public/reference/img/vectorRaster.jpg)
+![](https://raw.githubusercontent.com/NamjuLee/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/main/public/reference/img/vectorRaster.jpg)
 
 **GOAL**
 
@@ -122,7 +122,7 @@ LAB 05 - Color, Pixel, Voxel
 
 #### 5. Introduction to AI models and Implementations
 
-![](https://raw.githubusercontent.com/NamjuLee/Data-in-Design-AI-for-Urban-Data-and-Visualization-Harvard-GSD/main/public/reference/img/digitalTexture.jpg)
+![](https://raw.githubusercontent.com/NamjuLee/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/main/public/reference/img/digitalTexture.jpg)
 
 **GOAL**
 
@@ -151,7 +151,7 @@ Examples - Map classification, GAN ...
 
 #### 7. Introduction to Third Place Prediction research
 
-![](https://raw.githubusercontent.com/NamjuLee/Data-in-Design-AI-for-Urban-Data-and-Visualization-Harvard-GSD/main/public/reference/img/thirdPlace.jpg)
+![](https://raw.githubusercontent.com/NamjuLee/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/main/public/reference/img/thirdPlace.jpg)
 
 **GOAL**
 
@@ -178,7 +178,7 @@ LAB 04 - Implementation(Boston, LA, and Redlands)
 
 #### 9. Introduction to Data Visualization and Digital Mapping
 
-![](https://raw.githubusercontent.com/NamjuLee/Data-in-Design-AI-for-Urban-Data-and-Visualization-Harvard-GSD/main/public/reference/img/mapping.jpg)
+![](https://raw.githubusercontent.com/NamjuLee/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/main/public/reference/img/mapping.jpg)
 
 **Goal:** 
 
@@ -193,7 +193,7 @@ Mapping, Methodology and Implementation of ML model for Decision Making in Desig
 
 #### 10. Interactive Visualization on Web
 
-![](https://raw.githubusercontent.com/NamjuLee/Data-in-Design-AI-for-Urban-Data-and-Visualization-Harvard-GSD/main/public/reference/img/mapping2.jpg)
+![](https://raw.githubusercontent.com/NamjuLee/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/main/public/reference/img/mapping2.jpg)
 
 **WORKSHOP**
 

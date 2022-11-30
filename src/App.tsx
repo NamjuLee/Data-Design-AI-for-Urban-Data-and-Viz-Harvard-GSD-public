@@ -9,7 +9,7 @@ import Lab from "./App/page/Lab";
 import { LabPrimary , LabSecondary } from "./App/component/LabMenu";
 
 import './App.css';
-import { LAB_LINKS, LinkInfo } from "./PART_9_LAB_Visualization_Analysis/Lab";
+import { LAB_LINKS, LinkInfo } from "./PART_10_LAB_Visualization_Analysis";
 
 const App = () => {
   const lab = 'lab';

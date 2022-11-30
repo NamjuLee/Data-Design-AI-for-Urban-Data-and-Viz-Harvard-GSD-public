@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 const ContentLab = ({id, env}) => {
   const idContainer = 'container-lab';
   useEffect(() => {
-    import('../../../../PART_9_LAB_Visualization_Analysis/Lab').then(({ ControllerLabs }) => { 
+    import('../../../../PART_10_LAB_Visualization_Analysis').then(({ ControllerLabs }) => { 
         ControllerLabs.init(idContainer, id, env)}
       );
    });

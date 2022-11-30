@@ -51,7 +51,8 @@ Software: [Visual Studio Code](https://code.visualstudio.com/Download), [NodeJS]
 #### 1. Data & Design: Code for Design
 
 
-![Data in Design](https://raw.githubusercontent.com/NamjuLee/Data-in-Design-AI-for-Urban-Data-and-Visualization-Harvard-GSD/main/public/reference/img/dataDesignSequence.jpg)
+![Data in Design](https://raw.githubusercontent.com/NamjuLee/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/main/public/reference/img/dataDesignSequence.jpg)
+
 
 
 **GOAL** 
@@ -87,7 +88,7 @@ LAB 05 - Pandas
 
 #### 3. Vector and Raster as design data
 
-![](https://raw.githubusercontent.com/NamjuLee/Data-in-Design-AI-for-Urban-Data-and-Visualization-Harvard-GSD/main/public/reference/img/vectorRaster.jpg)
+![](https://raw.githubusercontent.com/NamjuLee/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/main/public/reference/img/vectorRaster.jpg)
 
 **GOAL**
 
@@ -117,7 +118,7 @@ LAB 05 - Color, Pixel, Voxel
 
 #### 5. Introduction to AI models and Implementations
 
-![](https://raw.githubusercontent.com/NamjuLee/Data-in-Design-AI-for-Urban-Data-and-Visualization-Harvard-GSD/main/public/reference/img/digitalTexture.jpg)
+![](https://raw.githubusercontent.com/NamjuLee/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/main/public/reference/img/digitalTexture.jpg)
 
 **GOAL**
 
@@ -148,7 +149,7 @@ Examples - Map classification, GAN ...
 
 #### 7. Introduction to Third Place Prediction research
 
-![](https://raw.githubusercontent.com/NamjuLee/Data-in-Design-AI-for-Urban-Data-and-Visualization-Harvard-GSD/main/public/reference/img/thirdPlace.jpg)
+![](https://raw.githubusercontent.com/NamjuLee/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/main/public/reference/img/thirdPlace.jpg)
 
 **GOAL**
 
@@ -157,10 +158,6 @@ We will take look the Third Place research([Initial work](http://www.njstudio.co
 **LECTURE**
 
 Network Analysis, Dimension Reduction, Cost function, Decay function ... 
-
------
-
-#### 8. Third Place Prediction model and Implementation
 
 **WORKSHOP**
 
@@ -172,13 +169,21 @@ LAB 03 - Training modes and
 
 LAB 04 - Implementation(Boston, LA, and Redlands)
 
+-----
+
+#### 8. Third Place Prediction model and Implementation
+
+LAB 01 - Visualization 
+
+LAB 02 - Implementation of the third place model
+
 ---------------------------------
 
 #### 9. Introduction to Data Visualization and Digital Mapping
 
-![](https://raw.githubusercontent.com/NamjuLee/Data-in-Design-AI-for-Urban-Data-and-Visualization-Harvard-GSD/main/public/reference/img/mapping.jpg)
+![](https://raw.githubusercontent.com/NamjuLee/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/main/public/reference/img/mapping.jpg)
 
-**Goal:** 
+**Goal** 
 
 This part is about implementing interactive visualization with urban data, and the results from Machine Learning on a web browser. We will take a look for some useful digital mapping techniques such as Bin, Color Blending, and more.
 
@@ -192,7 +197,7 @@ Mapping, Methodology and Implementation of ML model for Decision Making in Desig
 
 #### 10. Interactive Visualization on Web
 
-![](https://raw.githubusercontent.com/NamjuLee/Data-in-Design-AI-for-Urban-Data-and-Visualization-Harvard-GSD/main/public/reference/img/mapping2.jpg)
+![](https://raw.githubusercontent.com/NamjuLee/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/main/public/reference/img/mapping2.jpg)
 
 **WORKSHOP**
 

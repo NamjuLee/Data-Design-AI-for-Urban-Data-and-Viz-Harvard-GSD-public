@@ -1,7 +1,7 @@
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 
-import { markdownGSD, markdownMIT, markdownLecture, markdownWorkshopSeries, markdownBIO } from '../../const'
+import { markdownGSD, markdownLecture, markdownWorkshopSeries, markdownBIO } from '../../const'
 
 import Footer from '../../component/Footer';
 
@@ -23,7 +23,7 @@ const LectureWorkshop = () => {
             <div className="lecture-workshop-center">
 
                 <p>Instructor: NJ Namju Lee</p>
-                <a className="git-icon" href="https://github.com/NamjuLee/Data-in-Design-AI-for-Urban-Data-and-Visualization-Harvard-GSD/">
+                <a className="git-icon" href="https://github.com/NamjuLee/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/">
                     <i className={"fa"}>&#xf09b;</i>
                 </a>
 
@@ -46,27 +46,22 @@ const LectureWorkshop = () => {
             </div>
 
 
-            <div className='lecture-workshop-bg-dark'>
-                <div className='lecture-workshop-center'>
-                    <ReactMarkdown children={markdownMIT} remarkPlugins={[remarkGfm]} transformImageUri={uri => uri.startsWith("http") ? uri : `${process.env.PUBLIC_URL}${uri}`} />
-                </div>
-            </div>
 
-            <div className='lecture-workshop-bg'>
+            <div className='lecture-workshop-bg-dark'>
                 <div className='lecture-workshop-center'>
                     <ReactMarkdown children={markdownLecture} remarkPlugins={[remarkGfm]} transformImageUri={uri => uri.startsWith("http") ? uri : `${process.env.PUBLIC_URL}${uri}`} />
                 </div>
             </div>
 
 
-            <div className='lecture-workshop-bg=dark'>
+            <div className='lecture-workshop-bg'>
                 <div className='lecture-workshop-center'>
                     <ReactMarkdown children={markdownWorkshopSeries} remarkPlugins={[remarkGfm]} transformImageUri={uri => uri.startsWith("http") ? uri : `${process.env.PUBLIC_URL}${uri}`} />
                 </div>
             </div>
 
 
-            <div className='lecture-workshop-bg'>
+            <div className='lecture-workshop-bg-dark'>
                 <div className='lecture-workshop-center'>
                     <ReactMarkdown children={markdownBIO} remarkPlugins={[remarkGfm]} transformImageUri={uri => uri.startsWith("http") ? uri : `${process.env.PUBLIC_URL}${uri}`} />
                 </div>
