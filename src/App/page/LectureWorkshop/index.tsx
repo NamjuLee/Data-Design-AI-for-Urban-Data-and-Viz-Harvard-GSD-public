@@ -22,7 +22,11 @@ const LectureWorkshop = () => {
 
             <div className="lecture-workshop-center">
 
-                <p>Instructor: NJ Namju Lee</p>
+                <p>
+                    <a href="https://namjulee.github.io/njslabs/nj-namju-lee">
+                    Instructor: NJ Namju Lee
+                    </a>
+                </p>
                 <a className="git-icon" href="https://github.com/NamjuLee/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/">
                     <i className={"fa"}>&#xf09b;</i>
                 </a>

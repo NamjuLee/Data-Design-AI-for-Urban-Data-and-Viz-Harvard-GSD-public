@@ -1,8 +1,8 @@
 export const markdownBIO = `
 
-## [NJ Namju Lee](mailto:nj.namju@gmail.com)
+## [NJ Namju Lee](https://namjulee.github.io/njslabs/nj-namju-lee)
 
-_Director and founder of_ [_NJSTUDIO_](http://www.njstudio.co.kr) & _NJS Lab_  
+_Director and founder of_ [_NJSTUDIO_](http://www.njstudio.co.kr) & (_NJS Lab_)[https://namjulee.github.io/njslabs/nj-namju-lee]
 
 _Design, Data, Computation, Visualization specialist_
 

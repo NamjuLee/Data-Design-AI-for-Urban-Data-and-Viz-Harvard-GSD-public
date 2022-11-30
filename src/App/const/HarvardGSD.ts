@@ -53,10 +53,7 @@ Software: [Visual Studio Code](https://code.visualstudio.com/Download), [NodeJS]
 #### 1. Data & Design: Code for Design
 
 
-
-<a href="https://youtu.be/VC-cLerlm4sY" target="_blank">
- <img src="./reference/img/data&Design.jpg" alt="Watch the video" width="300"  />
-</a>
+![Data in Design](https://raw.githubusercontent.com/NamjuLee/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/main/public/reference/img/dataDesignSequence.jpg)
 
 
 **GOAL** 
@@ -68,8 +65,7 @@ For the introduction to the key topic: Data in Design, It helps you to understan
 
 [Data in Design](https://medium.com/@nj-namju/data-design-c21457dc8dc)
 
-![Data in Design](https://raw.githubusercontent.com/NamjuLee/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/main/public/reference/img/dataDesignSequence.jpg)
-
+---------------------------------
 
 #### 2. Programming and data processing
 
@@ -78,11 +74,9 @@ For the introduction to the key topic: Data in Design, It helps you to understan
 Data processing, Data Type, Memory, Python, Numpy, Pandas, Tensorflow, keras, ...
 
 
-LAB 01 - Python Basic
+LAB 01 - Python Basic, Condition & Loop, Primitive Data Structure 
 
-LAB 02 - Condition & Loop
-
-LAB 03 - Data Structure, format, object(class)
+LAB 02 - File format, Data Structure, object(class)
 
 LAB 04 - Matrix, Numpy 
 
@@ -103,6 +97,8 @@ We will have the perspective to decompose design elements as vector and raster d
 **LECTURE** 
 
 Vector and Raster data, GIS
+
+---------------------------------
 
 #### 4. Geometry Data
 
@@ -161,6 +157,7 @@ We will take look the Third Place research([Initial work](http://www.njstudio.co
 
 Network Analysis, Dimension Reduction, Cost function, Decay function ... 
 
+---------------------------------
 
 #### 8. Third Place Prediction model and Implementation
 
@@ -190,6 +187,7 @@ This part is about implementing interactive visualization with urban data, and t
 Principles of Graphical Integrity, Color computation, Projection, Generalization
 Mapping, Methodology and Implementation of ML model for Decision Making in Design
 
+---------------------------------
 
 #### 10. Interactive Visualization on Web
 
