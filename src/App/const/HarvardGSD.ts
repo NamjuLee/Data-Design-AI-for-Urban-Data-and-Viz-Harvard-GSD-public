@@ -51,7 +51,7 @@ Software: [Visual Studio Code](https://code.visualstudio.com/Download), [NodeJS]
 
 **PARTICIPANTS**
 
-Upto 10 people 
+Upto 10 
 
 
 **Prerequisite**
@@ -75,19 +75,22 @@ The introduction to the key topic: Data in Design, helps you understand the mean
 
 #### 2. Programming and data processing
 
+![](https://raw.githubusercontent.com/NamjuLee/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/main/public/reference/img/programming.jpg)
+
 **WORKSHOP**
 
-As a first step, We will learn the basic concept of programming dealing with logical flows and data manipulation.
-Data processing, Data Type, Memory, Python, Numpy, Pandas, Tensorflow, keras, ...
+Data processing, Data Type, Memory, Python, Numpy, Pandas library, ...
+
+As a first step, We will learn the basic concept of programming, dealing with logical flows and data manipulation.
 
 
 LAB 01 - Python Basic, Condition & Loop, Primitive Data Structure 
 
 LAB 02 - File format, Data Structure, object(class)
 
-LAB 04 - Matrix, Numpy 
+LAB 04 - Matrix, Numpy basic
 
-LAB 05 - Pandas
+LAB 05 - Pandas basic
 
 
 
@@ -95,19 +98,18 @@ LAB 05 - Pandas
 
 #### 3. Vector and Raster as design data
 
-![](https://raw.githubusercontent.com/NamjuLee/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/main/public/reference/img/vectorRaster.jpg)
-
-**GOAL**
-
-We will have the perspective to decompose design elements as vector and raster data. This allows us to think and compute the design process.  
+![](https://raw.githubusercontent.com/NamjuLee/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/main/public/reference/img/vectorRaster-1.jpg)
 
 **LECTURE** 
 
-Vector and Raster data, GIS
+Understanding the tool for qualification and quantification is crucial for using data as design material. We will learn basic design and how to decompose design elements as vector and raster data. It can allow us to think and set up the design process.
+
 
 ---------------------------------
 
 #### 4. Geometry Data
+
+![](https://raw.githubusercontent.com/NamjuLee/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/main/public/reference/img/vector.jpg)
 
 **WORKSHOP**
 
@@ -127,9 +129,11 @@ LAB 05 - Color, Pixel, Voxel
 
 ![](https://raw.githubusercontent.com/NamjuLee/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/main/public/reference/img/digitalTexture.jpg)
 
-**GOAL**
+**GOAL** 
 
 We will gain a high-level understanding of AI in design: Supervised and Unsupervised Learning. Students will go through several examples, enabling us to expand the use of models for design.
+
+Tensorflow, Keras
 
 **LECTURE**
 
