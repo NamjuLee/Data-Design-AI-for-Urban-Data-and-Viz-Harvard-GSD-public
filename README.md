@@ -1,6 +1,6 @@
 # Data & Design, AI for Urban Data and Visualization
 
-[Web Site](https://namjulee.github.io/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/)
+[Web Site & Lab](https://namjulee.github.io/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/)
 
 
 ### Data, Design Computation, Artificial Intelligence, Visualization, Harvard GSD J Term 2023
