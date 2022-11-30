@@ -13,11 +13,11 @@ Vector, Raster, Urban Data, GIS, Data Processing, Data Mining, Machine Learning,
 
 This course contains several introductory lectures and hands-on workshops for those who want to use data as design materials to develop the design process. 
 
-This course was basically designed for a one-year long period. However, for a few days, we will gently visit the basic concepts and implementations of the topics: Code, Data and processing, Geometry data, Vector, Raster, and some machine learning models and their related technologies, such examples: Regression, Classification, Pattern, Data Representation, Dimensionality Reduction, Machine Learning, Deep Learning, Implementation, Mapping, and Visualization Methodologies. 
+We will gently visit the basic concepts and implementations of the topics: Code, Data and processing, Geometry data, Vector, Raster, and some machine learning models and their related technologies, such examples: Regression, Classification, Pattern, Data Representation, Dimensionality Reduction, Machine Learning, Deep Learning, Implementation, Mapping, and Visualization Methodologies. 
 
-From the designer's perspective, we will better understand and implement the use of data and tools, finally, gain the holistic high-level concepts to expand that knowledge and technology further. Therefore, the ideas and contents you will learn in this course could become a map for those who want to learn how to use data and digital media in design.
+From the designer's perspective, students will better understand and implement the use of data and tools, finally, gain holistic high-level concepts to expand that knowledge and technology further. Therefore, the ideas and contents you will learn in this course could become a map for those who want to learn how to use data and digital media in design.
 
-Since we have limited time, each day, students will learn individual topics listed below. Then, students will make a group to discuss, help, understand, and finish homework and examples. All code and examples will be online, and the instructor will be available before and after class for troubleshooting.
+Each day, students will learn the individual topics listed below. Then, students will make a group to discuss, help, understand, and finish homework and examples. All code and examples will be online, and the instructor will be available before and after class for troubleshooting.
 
 In addition, it is also possible for an individual or group to focus on one of the primary topics and revisit other topics after the course based on the student's ability and expectations. It is yours if you are interested in data as a design material.
 
@@ -51,7 +51,7 @@ Software: [Visual Studio Code](https://code.visualstudio.com/Download), [NodeJS]
 
 **PARTICIPANTS**
 
-Upto 10 
+Up to 10 students
 
 
 **Prerequisite**
@@ -140,7 +140,7 @@ We will gain a high-level understanding of AI in design: Supervised and Unsuperv
 
 ![](https://raw.githubusercontent.com/NamjuLee/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/main/public/reference/img/digitalTexture.jpg)
 
-Tensorflow, Keras, Numpy, Pandas and other library...
+Tensorflow, Keras, Numpy, Pandas, and other libraries
 
 LAB 01 - Temperature conversion
 
@@ -154,7 +154,7 @@ Examples - Map classification, GAN ...
 
 ---------------------------------
 
-#### 7. Introduction to Third Place Prediction research
+#### 7. Introduction to Third Place Prediction Research
 
 ![](https://raw.githubusercontent.com/NamjuLee/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/main/public/reference/img/thirdPlace.jpg)
 
@@ -165,19 +165,19 @@ We will take look the Third Place research([Initial work](http://www.njstudio.co
 
 Network Analysis, Dimension Reduction, Cost function, Decay function ... 
 
-LAB 01. Parsing data, Google Place API
+LAB 01 - Parsing data, Google Place API
 
-LAB 02. Parsing, Processing, Visualizing Data
+LAB 02 - Parsing, Processing, Visualizing Data
 
-LAB 03. Processing Data For Train
+LAB 03 - Processing Data For Train
 
-LAB 04. Training Models
+LAB 04 - Training Models
 
-LAB 05. Network: Distance(Euclidean) and Decay model 
+LAB 05 - Network: Distance(Euclidean) and Decay model 
 
-LAB 06. Fitting Network and Implementation
+LAB 06 - Fitting Network and Implementation
 
-LAB 07. Networks for Boston, LA, and Redlands
+LAB 07 - Networks for Boston, LA, and Redlands
 
 ---------------------------------
 
@@ -197,17 +197,20 @@ LAB 02 - Model implementation(Boston, LA, and Redlands)
 
 ![](https://raw.githubusercontent.com/NamjuLee/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/main/public/reference/img/mapping.jpg)
 
-**Goal:** 
-
-This part is about implementing interactive visualization with urban data, and the results from Machine Learning on a web browser. We will take a look for some useful digital mapping techniques such as Bin, Color Blending, and more.
-
-
 **LECTURE**
 
-Principles of Graphical Integrity, Color computation, Projection, Generalization
-Mapping, Methodology and Implementation of ML model for Decision Making in Design
+Principles of Graphical Integrity, Visualization, Projection, Generalization
+
+Pipeline for visualization, Mapping, Methodology, and Implementation
+
+Implementing digital mapping and visualization on the web environment, Understanding boilerplate code and the pipeline
+
+LAB 01 - Typescript Basic
+
+LAB 02 - Boilerplate code and the pipeline
 
 ---------------------------------
+
 
 #### 10. Interactive Visualization on Web
 
@@ -215,30 +218,23 @@ Mapping, Methodology and Implementation of ML model for Decision Making in Desig
 
 **WORKSHOP**
 
-Pipeline for visualization on designers' perspective
-Typescript basic
+This part is about implementing interactive visualization with urban data and the results from Machine Learning on a web browser. We will examine practical digital mapping techniques such as Bin, Color Blending, and more.
 
 
 ArcGIS JSAPI / MapboxGL / HTML Canvas / njsCore / Typescript ...
-Implementing digital mapping and visualization on web environment 
-Understanding of boilerplate code and the pipeline 
-
 Point, Line, Polygon, Interaction, Bin, Color Computation Blending mode using HTML Canvas 
 
-Digital Mapping and Visualization
 
-LAB 01 - Typescript Basic
+LAB 01 - Basic visualization
 
-LAB 02 - Basic visualization
+LAB 02 - Visualization Vector and Raster
 
-LAB 03 - Visualization Vector and Raster
-
-LAB 04 - Visualization analysis methods and tools
+LAB 03 - Visualization analysis methods and tools
 
 
 ---
 
-! This schedule could be revised based on the students' expectations and time.  
+! This schedule could be revised based on the student's expectations and time.
 
 ---
 
@@ -250,7 +246,7 @@ Paper: https://www.springer.com/gp/book/9789813343993
 
 Medium: https://medium.com/@nj-namju/third-place-analysis-and-implementation-design-data-artificial-intelligence-bf802a8e7e0a
 
-Github: https://github.com/NamjuLee/Third-Place-Prediction-Report-V2022
+GitHub: https://github.com/NamjuLee/Third-Place-Prediction-Report-V2022
 
 Introduction to Computational Design: Data, Geometry, and Visualization Using Digital Media: https://nj-namju.medium.com/introduction-to-computational-design-data-geometry-and-visualization-using-digital-media-14161fdfd22f
 

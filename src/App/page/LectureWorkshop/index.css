@@ -53,3 +53,12 @@
 .lecture-workshop-bg-dark img:hover {
     filter: grayscale(0%);
 }
+
+.lecture-workshop-bg p {
+    color: black;
+}
+
+.lecture-workshop-bg a {
+    color: black;
+    text-decoration: underline;
+}
