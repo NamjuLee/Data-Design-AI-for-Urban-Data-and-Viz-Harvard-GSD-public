@@ -102,8 +102,7 @@ LAB 05 - Pandas basic
 
 **LECTURE** 
 
-Understanding the tool for qualification and quantification is crucial for using data as design material. We will learn basic design and how to decompose design elements as vector and raster data. It can allow us to think and set up the design process.
-
+Understanding the tool for qualification and quantification is crucial for using data as design material. We will learn basic design and how to decompose design elements as vector and raster data. In addition, it can allow us to think and set up the design process.
 
 ---------------------------------
 
@@ -127,22 +126,21 @@ LAB 05 - Color, Pixel, Voxel
 
 #### 5. Introduction to AI models and Implementations
 
-![](https://raw.githubusercontent.com/NamjuLee/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/main/public/reference/img/digitalTexture.jpg)
-
-**GOAL** 
-
-We will gain a high-level understanding of AI in design: Supervised and Unsupervised Learning. Students will go through several examples, enabling us to expand the use of models for design.
-
-Tensorflow, Keras
+![](https://raw.githubusercontent.com/NamjuLee/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/main/public/reference/img/ml.jpg)
 
 **LECTURE**
 
-Regression, classification, Cost function, Machine Learning, Deep Learning...
+Regression, Classification, Machine Learning, Deep Learning
 
+We will gain a high-level understanding of AI in design: Supervised and Unsupervised Learning and related models. Students will go through several examples, enabling us to expand the use of models in design processes.
 
 #### 6. Problem, Data(Vector & Raster), Model, Train, Validation
 
 **WORKSHOP**
+
+![](https://raw.githubusercontent.com/NamjuLee/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/main/public/reference/img/digitalTexture.jpg)
+
+Tensorflow, Keras, Numpy, Pandas and other library...
 
 LAB 01 - Temperature conversion
 
