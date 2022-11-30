@@ -257,7 +257,7 @@ Computational Design Thinking for Designers: https://nj-namju.medium.com/computa
 
 **INSTRUCTOR:** 
 
-NJ Namju Lee / nj.namju@gmail.com
+[NJ Namju Lee](https://namjulee.github.io/njslabs/nj-namju-lee) / nj.namju@gmail.com
 
 MDes;Harvard, MArch;UCB, B.S;SNUST, Research Fellow; MIT
 Architecture design, Computation, Visualization specialist, Director and founder of NJSTUDIO and NJSLab
