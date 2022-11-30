@@ -158,27 +158,38 @@ Examples - Map classification, GAN ...
 
 ![](https://raw.githubusercontent.com/NamjuLee/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/main/public/reference/img/thirdPlace.jpg)
 
-**GOAL**
+**LECTURE** : [Reading](https://nj-namju.medium.com/third-place-analysis-and-implementation-design-data-artificial-intelligence-bf802a8e7e0a)
 
 We will take look the Third Place research([Initial work](http://www.njstudio.co.kr/main/project/2016_MobilityEnergyConsumptionMITMediaLab/index.html), [Paper](https://link.springer.com/chapter/10.1007/978-981-33-4400-6_11), [AI Model](https://lnkd.in/gdf6d8j7)), 
 
-**LECTURE**
 
 Network Analysis, Dimension Reduction, Cost function, Decay function ... 
+
+LAB 01. Parsing data, Google Place API
+
+LAB 02. Parsing, Processing, Visualizing Data
+
+LAB 03. Processing Data For Train
+
+LAB 04. Training Models
+
+LAB 05. Network: Distance(Euclidean) and Decay model 
+
+LAB 06. Fitting Network and Implementation
+
+LAB 07. Networks for Boston, LA, and Redlands
 
 ---------------------------------
 
 #### 8. Third Place Prediction model and Implementation
 
+![](https://raw.githubusercontent.com/NamjuLee/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/main/public/reference/img/thirdPlaceImple.jpg)
+
 **WORKSHOP**
 
-LAB 01 - Fetching data, JSON data, 
+LAB 01 - Visualization, 
 
-LAB 02 - pre-processing, 
-
-LAB 03 - Training modes and  
-
-LAB 04 - Implementation(Boston, LA, and Redlands)
+LAB 02 - Model implementation(Boston, LA, and Redlands)
 
 ---------------------------------
 
