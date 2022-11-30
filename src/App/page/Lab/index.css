@@ -1,0 +1,103 @@
+.main-body{
+    position: relative;
+    /* background-color: red; */
+    display: flex;
+    height: 100%;
+}
+
+.sub-title {
+    margin-top: 0px;
+    color: lightgray;
+    font-size: large;
+}
+.left-menu {
+
+    padding-bottom: 5px;
+}
+.left-menu ul {
+    padding-left: 0px;
+    list-style: none;
+
+}
+ol {
+    padding-left: 20px;
+}
+
+.menu-left-title{
+    color: var(--mainFontColor);
+    font-size: large;
+  }
+
+.input-left-menu {
+    width: 100%;
+    background-color: darkgray;
+    border: black;
+    cursor:text;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+.lab-title{
+    padding-top: 10px;
+}
+
+.second-menu{
+    background-color: #1f1f1f;
+}
+.subpage-outlet-container, .container-lab {
+    background-color: #171717;;
+}
+  
+.menu-left {
+    /* background-color: blue; */
+    width: 180px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    height: calc(100vh - 80px); /** header height is 80px */
+    overflow-y: auto;
+}
+
+.menu-left-font {
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+.sub-menu-left-padding-top {
+    padding-top: 15px;
+}
+
+.container-lab {
+    /* position: absolute; */
+    /* background-color: black; */
+    /* width: calc(100% - 150px); */
+    width: 100%;
+
+    /* background-color: blueviolet; */
+    /* min-width: 100%; */
+    /* height: 100%; */
+    /* min-height: 100%; */
+    height: 100%;
+    background-color: #1a1a1a;
+}
+
+a {
+    /* text-decoration: none;
+    color: darkgrey; */
+}
+a:hover {
+    color: white;
+}
+.separator {
+color:darkgrey;
+}
+
+.title-over {
+    color: #fff;
+    /* font: 400; */
+    font-size: 55px;
+    position: absolute;
+    z-index: 2;
+    /* margin-top: 15px; */
+    margin-left: 15px;
+}

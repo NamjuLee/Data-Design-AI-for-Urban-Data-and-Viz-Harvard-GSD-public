@@ -1,0 +1,20 @@
+**/*.txt.ignore
+**/njscore-package
+
+**/*.h5
+**/*.hdf5
+**/*.bin
+**/model.png
+
+**/src/PART_3_AI_Model_Implementation/SmartDrawing/data
+**/src/PART_3_AI_Model_Implementation/TexturePrediction/data
+**/src/PART_4_Third_Place_Prediction_Model/LAB_01_Third Place Prediction/data
+
+**/.ipynb_checkpoints
+
+
+yarn-error.log
+
+.env
+
+node_modules

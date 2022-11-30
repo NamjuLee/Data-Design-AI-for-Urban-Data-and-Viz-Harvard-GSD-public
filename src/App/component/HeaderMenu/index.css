@@ -1,0 +1,22 @@
+.header-menu {
+    display: flex;
+    padding-left: 15px;
+}
+.header-menu ul {
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+    gap: 25px;
+    padding-left: 0px;
+}
+
+.njs-icon {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: 500;
+    font-size: 30px;
+    margin-right: 10px;
+}
