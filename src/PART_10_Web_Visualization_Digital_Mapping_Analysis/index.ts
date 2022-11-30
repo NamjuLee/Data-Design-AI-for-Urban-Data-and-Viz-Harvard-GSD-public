@@ -78,12 +78,12 @@ export class ControllerLabs {
         }
         switch (appID) {
             // case 'Machine-Learning-tfjs': import('./Lab/workshop-ml').then(({ Solution }) => { this.app = new Solution(containerID) }); break; // OLD UI
-            case 'Typescript-syntax': import('../PART_09_Visualization_and_Digital_Mapping/01_Typescript_Basics').then(({ Solution }) => { this.app = new Solution(containerID) }); break;
-            case 'Condition-Loop': import('../PART_09_Visualization_and_Digital_Mapping/02_Condition_Loop').then(({ Solution }) => { this.app = new Solution(containerID) }); break;
-            case 'Data-Structure': import('../PART_09_Visualization_and_Digital_Mapping/03_Data_Structure').then(({ Solution }) => { this.app = new Solution(containerID) }); break;
-            case 'Function-Class': import('../PART_09_Visualization_and_Digital_Mapping/04_Function_Class').then(({ Solution }) => { this.app = new Solution(containerID) }); break;
+            case 'Typescript-syntax': import('../PART_09_Visualization_Typescirpt/01_Typescript_Basics').then(({ Solution }) => { this.app = new Solution(containerID) }); break;
+            case 'Condition-Loop': import('../PART_09_Visualization_Typescirpt/02_Condition_Loop').then(({ Solution }) => { this.app = new Solution(containerID) }); break;
+            case 'Data-Structure': import('../PART_09_Visualization_Typescirpt/03_Data_Structure').then(({ Solution }) => { this.app = new Solution(containerID) }); break;
+            case 'Function-Class': import('../PART_09_Visualization_Typescirpt/04_Function_Class').then(({ Solution }) => { this.app = new Solution(containerID) }); break;
             // .....................
-            case 'Exercise': import('./../PART_09_Visualization_and_Digital_Mapping/05_Exercise').then(({ Solution }) => { this.app = new Solution(containerID) }); break;
+            case 'Exercise': import('../PART_09_Visualization_Typescirpt/05_Exercise').then(({ Solution }) => { this.app = new Solution(containerID) }); break;
         }
         switch (appID) {
             case 'JSAPI-Starter':

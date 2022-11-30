@@ -23,7 +23,7 @@ In addition, it is also possible for an individual or group to focus on one of t
 
 **DELIVERABLES**:
 
-Homework
+Class materials and homework
 
 **LOCATION:** 
 
@@ -39,6 +39,7 @@ TUE(03), WED(04), THU(05), FRI(06), Mon(9), January 2023
 
 20% for lectures, 70% for workshops, and 10% for exercise and troubleshooting
 
+
 **TOOL**
 
 Programming Language: [Python](https://www.python.org/)([Anaconda](https://docs.anaconda.com/anaconda/install/index.html)), [Typescript](https://www.typescriptlang.org/)([Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript))
@@ -46,6 +47,16 @@ Programming Language: [Python](https://www.python.org/)([Anaconda](https://docs.
 Library: [NJSCore](https://www.npmjs.com/package/njscore), [Numpy](https://numpy.org/), [Pandas](https://pandas.pydata.org/), [Tensorflow](https://www.tensorflow.org/), [TensorflowJS](https://www.tensorflow.org/js)
 
 Software: [Visual Studio Code](https://code.visualstudio.com/Download), [NodeJS](https://nodejs.org/en/), [Github Desktop](https://desktop.github.com/)
+
+
+**PARTICIPANTS**
+
+Upto 10 people 
+
+
+**Prerequisite**
+
+Experience with one of modern programming languages(Python, Java, Javascript, Typescript, C, C++, C#, or Swift)
 
 
 -----
@@ -56,14 +67,9 @@ Software: [Visual Studio Code](https://code.visualstudio.com/Download), [NodeJS]
 ![Data in Design](https://raw.githubusercontent.com/NamjuLee/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/main/public/reference/img/dataDesignSequence.jpg)
 
 
-**GOAL** 
+**LECTURE** - [Data in Design](https://medium.com/@nj-namju/data-design-c21457dc8dc)
 
-For the introduction to the key topic: Data in Design, It helps you to understand the meaning of the use of data in the design process through several examples. As a first step, We will get the basic concept of programming dealing with logical flows and data manipulation.
-
-
-**LECTURE**
-
-[Data in Design](https://medium.com/@nj-namju/data-design-c21457dc8dc)
+The introduction to the key topic: Data in Design, helps you understand the meaning of using data in the design process through several examples. 
 
 ---------------------------------
 
@@ -71,6 +77,7 @@ For the introduction to the key topic: Data in Design, It helps you to understan
 
 **WORKSHOP**
 
+As a first step, We will learn the basic concept of programming dealing with logical flows and data manipulation.
 Data processing, Data Type, Memory, Python, Numpy, Pandas, Tensorflow, keras, ...
 
 
