@@ -3,7 +3,7 @@ import { OrbitControls } from 'three-orbitcontrols-ts';
 
 export class RendererThree {
     public canvas: HTMLCanvasElement;
-    public host: HTMLElement;
+    public hostDiv: HTMLElement;
     public ctx: CanvasRenderingContext2D;
     public t: number = 0.0;
     public camera: THREE.PerspectiveCamera;
@@ -12,7 +12,7 @@ export class RendererThree {
     public controls: OrbitControls;
     private requestFrame: number;
     constructor(id: string) {
-        this.host = document.getElementById(id);
+        this.hostDiv = document.getElementById(id);
         this.initCanvas();
     }
     private initCanvas() {
@@ -20,14 +20,16 @@ export class RendererThree {
         this.scene.background = new THREE.Color(0, 0, 0);
         this.scene.castShadow = true;
 
+
         this.renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
-        this.renderer.setPixelRatio(this.host.clientWidth / this.host.clientHeight);
+        this.renderer.setPixelRatio(this.hostDiv.clientWidth / this.hostDiv.clientHeight);
         this.renderer.domElement.id = 'Three';
         this.renderer.domElement.style.position = 'absolute';
-        this.renderer.setSize(this.host.clientWidth, this.host.clientHeight);
-        this.host.appendChild(this.renderer.domElement);
+        this.renderer.shadowMap.enabled = true;
+        this.renderer.setSize(this.hostDiv.clientWidth, this.hostDiv.clientHeight);
+        this.hostDiv.appendChild(this.renderer.domElement);
 
-        this.camera = new THREE.PerspectiveCamera(30, this.host.clientWidth / this.host.clientHeight, 1, 5000);
+        this.camera = new THREE.PerspectiveCamera(30, this.hostDiv.clientWidth / this.hostDiv.clientHeight, 0.01, 2000);
         this.controls = new OrbitControls( this.camera, this.renderer.domElement );
         this.camera.position.set( 0, 0, 5 );
         this.controls.update();
@@ -39,17 +41,17 @@ export class RendererThree {
 
     }
     private eventBind() {
-        this.renderer.domElement.onmousedown = (e: MouseEvent) => this.MouseDown(e);
-        this.renderer.domElement.onmouseup = (e: MouseEvent) => this.MouseUp(e);
-        this.renderer.domElement.onmousemove = (e: MouseEvent) => this.MouseMove(e);
+        this.renderer.domElement.onmousedown = (e: MouseEvent) => this.mouseDown(e);
+        this.renderer.domElement.onmouseup = (e: MouseEvent) => this.mouseUp(e);
+        this.renderer.domElement.onmousemove = (e: MouseEvent) => this.mouseMove(e);
 
         window.addEventListener('resize', () => this.onWindowResize());
 
     }
     private onWindowResize() {
-        this.camera.aspect = this.host.clientWidth / this.host.clientHeight;
+        this.camera.aspect = this.hostDiv.clientWidth / this.hostDiv.clientHeight;
         this.camera.updateProjectionMatrix();
-        this.renderer.setSize( this.host.clientWidth, this.host.clientHeight );
+        this.renderer.setSize( this.hostDiv.clientWidth, this.hostDiv.clientHeight );
     }
     private loop = () => {
         this.requestFrame = requestAnimationFrame(this.loop);
@@ -58,28 +60,28 @@ export class RendererThree {
         this.renderer.render(this.scene, this.camera);
         this.t += 0.01;
 
-        console.log('rendering...');
+        // console.log('rendering...');
     }
     // .............................................................................
     public start() {
         this.loop();
     }
-    public MouseDown(e: MouseEvent) {
+    public mouseDown(e: MouseEvent) {
         // console.log(e);
     }
-    public MouseUp(e: MouseEvent) {
+    public mouseUp(e: MouseEvent) {
         // console.log(e);
     }
-    public MouseClick(e: MouseEvent) {
+    public mouseClick(e: MouseEvent) {
         // console.log(e);
     }
-    public MouseDClick(e: MouseEvent) {
+    public mouseDClick(e: MouseEvent) {
         // console.log(e);
     }
-    public MouseMove(e: MouseEvent) {
+    public mouseMove(e: MouseEvent) {
         // console.log(e);
     }
-    public MouseDrag(e: MouseEvent) {
+    public mouseDrag(e: MouseEvent) {
         // console.log(e);
     }
     public update(scene: THREE.Scene) {
@@ -89,8 +91,8 @@ export class RendererThree {
         window.removeEventListener('resize', () => this.onWindowResize());
         cancelAnimationFrame(this.requestFrame);
         this.requestFrame = undefined;
-        while (this.host.lastChild) {
-            this.host.removeChild(this.host.lastChild);
+        while (this.hostDiv.lastChild) {
+            this.hostDiv.removeChild(this.hostDiv.lastChild);
         }
     }
 }

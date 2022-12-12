@@ -6,7 +6,7 @@ import './index.css';
 const HeaderMenu = () => {
     return (
         <nav className="header-menu">
-          <a className="njs-icon" href="https://namjulee.github.io/njslabs/" target="_blank" rel="noreferrer noopener">ⓝ</a>
+          <a className="njs-icon" href="https://namjulee.github.io/njs-lab-public/" target="_blank" rel="noreferrer noopener">ⓝ</a>
           <ul>
             <li>
               <Link to="/">Workshop</Link>
