@@ -1,5 +1,3 @@
-import { RendererCanvas } from '../../../lib';
-
 export class Solution {
     hostDiv;
     constructor(div: HTMLElement) {

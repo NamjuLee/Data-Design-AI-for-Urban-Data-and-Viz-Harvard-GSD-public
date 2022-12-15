@@ -2,10 +2,8 @@ export class Solution {
     hostDiv;
     constructor(div: HTMLElement) {
         this.hostDiv = div;
-        
-        const url = 'https://computationaldesign.tistory.com/53'
         const iframe = document.createElement('iframe');
-        iframe.src = url;
+        iframe.src = 'https://computationaldesign.tistory.com/55';
         iframe.width = '100%'
         iframe.height = '100%'
         iframe.style.background = '#fff';

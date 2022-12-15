@@ -2,10 +2,8 @@ export class Solution {
     hostDiv;
     constructor(div: HTMLElement) {
         this.hostDiv = div;
-        
-        const url = 'https://computationaldesign.tistory.com/53'
         const iframe = document.createElement('iframe');
-        iframe.src = url;
+        iframe.src = 'https://namjulee.github.io/njs-lab-public/lab/machine-learning/tf-image-face?ui=0';
         iframe.width = '100%'
         iframe.height = '100%'
         iframe.style.background = '#fff';

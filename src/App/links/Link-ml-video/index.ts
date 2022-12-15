@@ -2,12 +2,8 @@ export class Solution {
     hostDiv;
     constructor(div: HTMLElement) {
         this.hostDiv = div;
-        const iframe = document.createElement('iframe');
-        iframe.src = 'https://computationaldesign.tistory.com/51';
-        iframe.width = '100%'
-        iframe.height = '100%'
-        iframe.style.background = '#fff';
-        div.appendChild(iframe);
+        const url = 'https://namjulee.github.io/njs-lab-public/lab/machine-learning/tf-video-face'
+        window.open(url, '_blank');
     }
     public destroy() {
         while (this.hostDiv.lastElementChild) {

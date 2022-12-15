@@ -51,24 +51,23 @@ export class SmartDrawing {
             // console.log(predictOut.toString());
             // console.log('lllllllllllllllll');
             const rankings = true;
+            const outText: string[] = [];
             if (rankings) {
                 const logits = Array.from(predictOut.dataSync());
                 const rankingIndex = getIndexBySortDescending(logits as number[]);
                 // console.log(logits);
                 // console.log(rankingIndex);
                 // console.log('#####################');
-                const outText: string[] = [];
                 for (let i of rankingIndex) {
                     const probability: number = logits[i] as number;
                     const text = 'class:' + SmartDrawing.CLASS_TYPE[i] + ', probability:' + probability.toFixed(5);
                     console.log(text);
                     outText.push(text);
                 }
-                // this.UpdateDivWithText(outText);
             }
 
             const winner = predictOut.argMax(-1).dataSync()[0];
-            return SmartDrawing.CLASS_TYPE[winner];
+            return [SmartDrawing.CLASS_TYPE[winner], outText];
             // console.log(this.classStringsMultiClassification[winner]);
             // return this.PredictionPostProcessingLogisticRegression(scoreArray[0]);
         });

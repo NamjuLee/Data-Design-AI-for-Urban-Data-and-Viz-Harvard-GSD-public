@@ -1,8 +1,5 @@
 import * as tf from '@tensorflow/tfjs'
-import { RendererCanvas, Vector3, remap, } from '../../lib';
-
-
-// import { NVector3, MathUtility } from '../../../lib';
+import { RendererCanvas, remap } from '../../lib';
 
 export class Solution {
     public divHost: HTMLElement;
@@ -10,17 +7,13 @@ export class Solution {
     constructor(id: string) {
         this.divHost = document.getElementById(id);
 
-        // Center align
-        this.divHost.style.display = 'flex';
-        this.divHost.style.alignItems = 'center';
-
         const div = document.createElement('div');
+        div.style.marginTop = '80px';
         div.style.marginLeft = 'auto';
         div.style.marginRight = 'auto';
         div.style.backgroundColor = '#555';
         div.style.width = '600px';
         div.style.height = '350px';
-
         this.divHost.appendChild(div);
 
         // TODO
@@ -32,13 +25,16 @@ export class Solution {
         // this.start();
     }
     public destroy() {
+        this.renderer.stopTrain();
         this.renderer.destroy();
-        while (this.divHost.lastElementChild) {
-            this.divHost.removeChild(this.divHost.lastElementChild);
+        try {
+            while (this.divHost !== undefined && this.divHost.lastElementChild !== undefined) {
+                this.divHost.removeChild(this.divHost.lastElementChild);
+            }
+        } catch (error) {        
         }
     }
 }
-
 
 export class Renderer extends RendererCanvas {
     tfModel: TFModel;
@@ -57,8 +53,9 @@ export class Renderer extends RendererCanvas {
     public render(ctx: CanvasRenderingContext2D): void {
         // TODO
         // You code goes here for the rending loop
-        // this.tfModel.trainLoop();
-        // console.log(this.tfModel.hist);
+
+        this.accList = [];
+        this.lossList = [];
 
         let minX = 0
         let maxX = this.canvas.width;
@@ -68,6 +65,7 @@ export class Renderer extends RendererCanvas {
         
 
         for(let i = 0 ; i < this.tfModel.hist.length; ++i) {
+            // console.log(this.tfModel.hist)
             let acc = this.tfModel.hist[i].acc;
             let loss = this.tfModel.hist[i].loss;
 
@@ -77,6 +75,8 @@ export class Renderer extends RendererCanvas {
             if (maxY < acc) maxY = acc;
             if (maxY < loss) maxY = loss;
 
+            // console.log('acc', acc)
+
             this.accList.push(acc);
             this.lossList.push(loss);
         }
@@ -85,13 +85,11 @@ export class Renderer extends RendererCanvas {
 
             for (let i = 0; i < this.accList.length; ++i) {
                 let acc = this.accList[i];
-                console.log(acc)
-
 
                 let projected_X_Acc = remap(i, 0, this.accList.length,  0, this.canvas.width);
                 let projected_Y_Acc = remap(acc, maxY, minY,  0, this.canvas.height);
 
-                if (i === 0) {
+                if (i == 0) {
                     ctx.beginPath();
                     ctx.moveTo(projected_X_Acc, projected_Y_Acc);
                 } else {
@@ -104,16 +102,13 @@ export class Renderer extends RendererCanvas {
 
         }
 
-        console.log(this.lossList);
-
         if (this.lossList.length > 1) {
-
             for (let i = 0; i < this.lossList.length; ++i) {
                 let loss = this.lossList[i];
-                console.log(loss)
+                // console.log(loss)
 
                 let projected_X_loss = remap(i, 0, this.lossList.length,  0, this.canvas.width);
-                let projected_Y_loss = remap(loss, minY, maxY,  0, this.canvas.height);
+                let projected_Y_loss = remap(loss, minY, maxY,  this.canvas.height, 0);
 
                 if (i === 0) {
                     // ctx.beginPath();
@@ -133,10 +128,11 @@ export class Renderer extends RendererCanvas {
 
         }
 
-        
-
         // !! can stop render after this frame.
         // this.isStatic = true;
+    }
+    public stopTrain(){
+        this.tfModel.isTraining = false;
     }
 }
 
@@ -145,27 +141,12 @@ class TFModel {
     model: tf.Sequential;
     inputsTensor: tf.Tensor<tf.Rank.R2>;
     labelsTensor: tf.Tensor<tf.Rank.R2>;
-    hist: any = [];
+    hist: any[]= [];
     isTraining = false;
-
-    // xTrain = tf.tensor2d([
-    //     [0.0, 0.0],
-    //     [1.0, 0.0],
-    //     [0.0, 1.0],
-    //     [1.0, 1.0]
-    // ]);
-    // yTrain = tf.tensor2d([
-    //     [0.0],
-    //     [1.0],
-    //     [1.0],
-    //     [0.0]
-    // ]);
+    iteration = 0;
     constructor() {
         const d = getIrisData();
         tf.util.shuffle(d);
-
-
-        // console.log(d);
 
         const inputs = [];
         for (let i = 0; i < d.length; ++i) {
@@ -228,24 +209,30 @@ class TFModel {
         this.isTraining = true;
         this.trainLoop();
     }
-    public async trainLoop() {
+    public  trainLoop = async () => {
         if (!this.isTraining) return;
 
+        if (this.iteration++ % 100 === 0) {
         // for saving the model
         // await this.model.save('downloads://my-model');
         // const saveResults = await this.model.save('localstorage://ml/my-model-1');
         // console.log(saveResults);
+        }
+
+
 
         this.train().then((result: any) => {
-            // console.log(result.history.loss[0]);
-            this.hist = result.history;
-            console.log(result.history)
+
+            console.log( {'loss': result.history.loss[0], 'acc': result.history.acc[0]});
+
+            this.hist.push(result.history);
+            // console.log(result.history)
             setTimeout(() => this.trainLoop(), 1);
         });
     }
-    public async train() {
+    public train = async() => {
         return await this.model.fit(this.inputsTensor, this.labelsTensor, {
-            // batchSize: 100,
+            batchSize: 100,
             epochs: 1,
             shuffle: true,
             validationData: [this.inputsTensor, this.labelsTensor],

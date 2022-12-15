@@ -31,6 +31,7 @@ const DesignData: LinkInfo = {
 }
 const ProgrammingDataProcess: LinkInfo = {
     id: 'Programming-and-Data-Process', env: ENV.DEFAULT, keywords: [], subLinks: [
+        { id: 'Code For Design and Programming', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../App/links/External-Code-For-Design').then(({ Solution }) => { return new Solution(param.view as HTMLElement) }); } },
         { id: 'Computational Design Thinking', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../App/links/External-Computational-Design-Thinking').then(({ Solution }) => { return new Solution(param.view as HTMLElement) }); } },
         { id: 'Python Code (GitHub)', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../App/links/Link-Programming-Data-Processing').then(({ Solution }) => { return new Solution(param.view as HTMLElement) }); } },
     ]
@@ -49,6 +50,7 @@ const GeometryImplementation: LinkInfo = {
         { id: 'Canvas-Line-Polyline', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../PART_04_Geometry_Data/LAB_Web_02_Line_Polyline').then(({ Solution }) => { return new Solution(param.view as HTMLDivElement) }); } },
         { id: 'Canvas-Polyline-mouse-input', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../PART_04_Geometry_Data/LAB_Web_03_Polyline-Mouse-Input').then(({ Solution }) => { return new Solution(param.view as HTMLDivElement) }); } },
         { id: 'Canvas-Polygon', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../PART_04_Geometry_Data/LAB_Web_04_Polygon').then(({ Solution }) => { return new Solution(param.view as HTMLDivElement) }); } },
+        'divider',
         { id: 'Three-Mesh', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../PART_04_Geometry_Data/LAB_Web_05_Mesh').then(({ Solution }) => { return new Solution(param.containerID) }); } },
         { id: 'Three-Mesh-Rhino', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../PART_04_Geometry_Data/LAB_Web_06_MeshRhino').then(({ Solution }) => { return new Solution(param.containerID) }); } },
     ]
@@ -56,7 +58,7 @@ const GeometryImplementation: LinkInfo = {
 // ......................................... 3
 const Model: LinkInfo = {
     id: 'AI for Design', env: ENV.DEFAULT, keywords: [], subLinks: [
-        { id: 'AI for Design', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../PART_09_Visualization_Typescript/01_Typescript_Basics').then(({ Solution }) => { return new Solution(param.containerID) }); } },
+        { id: 'AI for Design', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../App/links/External-ai-for-designers').then(({ Solution }) => { return new Solution(param.view as HTMLDivElement) }); } },
         'divider',
     ]
 };
@@ -65,10 +67,18 @@ const ModelImplementation: LinkInfo = {
         { id: 'ML Python code', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../App/links/Link-ML-Python-Code').then(({ Solution }) => { return new Solution(param.view as HTMLElement) }); } },
         'divider',
         { id: 'TFJS-Tensor', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../PART_06_Problem_Data_Model_Train_Validation/LAB_Web_01_Tensor').then(({ Solution }) => { return new Solution(param.containerID) }); } },
-        // { id: 'TFJS-LR', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../PART_06_Problem_Data_Model_Train_Validation/LAB_Web_02_ModelLinearRegression').then(({ Solution }) => { return new Solution(param.containerID) }); } },
+        { id: 'TFJS-Linear-Regression', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../PART_06_Problem_Data_Model_Train_Validation/LAB_Web_02_ModelLinearRegression').then(({ Solution }) => { return new Solution(param.containerID) }); } },
+        
+        // 
         { id: 'TFJS-MPG', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../PART_06_Problem_Data_Model_Train_Validation/LAB_Web_03_MPGPrediction').then(({ Solution }) => { return new Solution(param.containerID) }); } },
-        { id: 'TFJS-KNN', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../PART_06_Problem_Data_Model_Train_Validation/LAB_Web_05_KNN').then(({ Solution }) => { return new Solution(param.containerID) }); } },
-        { id: 'TFJS-IRIS', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../PART_06_Problem_Data_Model_Train_Validation/LAB_Web_06_IrisPrediction').then(({ Solution }) => { return new Solution(param.containerID) }); } },
+        { id: 'Polynomial-regression', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../App/links/External-ml-regression').then(({ Solution }) => { return new Solution(param.view as HTMLElement) }); } },
+        { id: 'TFJS-KNN', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../PART_06_Problem_Data_Model_Train_Validation/LAB_Web_05_KNNIrisPrediction').then(({ Solution }) => { return new Solution(param.containerID) }); } },
+        { id: 'TFJS-IRIS', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../PART_06_Problem_Data_Model_Train_Validation/LAB_Web_06_NetworkIrisPrediction').then(({ Solution }) => { return new Solution(param.containerID) }); } },
+        'divider', 
+        { id: 'Smart Drawing', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../PART_06_Problem_Data_Model_Train_Validation/LAB_03_SmartDrawing/src/App').then(({ AppSmartDrawing }) => { return new AppSmartDrawing(param.containerID) }); } },
+        { id: 'Image-Face', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../App/links/External-ml-image').then(({ Solution }) => { return new Solution(param.view as HTMLElement) }); } },
+        { id: 'Video-Face', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../App/links/Link-ml-video').then(({ Solution }) => { return new Solution(param.view as HTMLElement) }); } },
+       
     ]
 };
 // ......................................... 4
@@ -206,8 +216,6 @@ export class ControllerLabs {
         if (param.env !== ENV.JSAPI) {
             view = document.getElementById(param.idContainer)
         }
-        console.debug('appID from lab code => ', appID)
-        console.log(view)
         await this.lab(appID, containerID, view);
     }
     async lab(appID: string, containerID: string, view: MapView | HTMLElement | undefined) {

@@ -6,8 +6,8 @@ export class Solution extends RendererCanvas {
         super(div);
 
         this.canvas.style.background = '#fff';
-        this.ctx.translate(this.ctx.canvas.width * 0.5, this.ctx.canvas.height * 0.5);
-        this.ctx.scale(2, 2);
+        // this.ctx.translate(this.ctx.canvas.width * 0.5, this.ctx.canvas.height * 0.5);
+        // this.ctx.scale(2, 2);
         this.init();
     }
     public init() {
@@ -59,9 +59,9 @@ export class Solution extends RendererCanvas {
 
         this.hostDiv.addEventListener('click', (e: MouseEvent) => {
             ctx.clearRect(-200, -200, 400, 400);
-            console.log(`mouse x: ${e.x}, y: ${e.y}`);
+            console.log(`mouse x: ${e.offsetX}, y: ${e.offsetY}`);
             // add a position to the list
-            listPoint2.push([e.x - 210, e.y - 210]);
+            listPoint2.push([e.offsetX, e.offsetY]);
 
             // draw lines by the array
             drawLine(listPoint2);
