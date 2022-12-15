@@ -59,7 +59,7 @@ export class Solution extends RendererCanvas {
 
         this.hostDiv.addEventListener('click', (e: MouseEvent) => {
             ctx.clearRect(-200, -200, 400, 400);
-            console.log(`mouse x: ${e.offsetX}, y: ${e.offsetY}`);
+            // console.log(`mouse x: ${e.offsetX}, y: ${e.offsetY}`);
             // add a position to the list
             listPoint2.push([e.offsetX, e.offsetY]);
 
