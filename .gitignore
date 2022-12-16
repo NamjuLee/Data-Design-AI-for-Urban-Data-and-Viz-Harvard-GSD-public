@@ -6,11 +6,16 @@
 **/*.bin
 **/model.png
 
-**/src/PART_3_AI_Model_Implementation/SmartDrawing/data
-**/src/PART_3_AI_Model_Implementation/TexturePrediction/data
-**/src/PART_4_Third_Place_Prediction_Model/LAB_01_Third Place Prediction/data
+**/src/PART_06_Problem_Data_Model_Train_Validation/LAB_03_SmartDrawing/data/img
+**/src/PART_06_Problem_Data_Model_Train_Validation/LAB_03_SmartDrawing/data/imgTest/savedImage.jpg
+
+**/src/PART_06_Problem_Data_Model_Train_Validation/LAB_04_TexturePrediction/dataProcessed
+
+# **/src/PART_4_Third_Place_Prediction_Model/LAB_01_Third Place Prediction/data
 
 **/.ipynb_checkpoints
+
+src
 
 build
 
