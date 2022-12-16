@@ -2,7 +2,7 @@ export class Solution {
     hostDiv;
     constructor(div: HTMLElement) {
         this.hostDiv = div;
-        const url = 'https://github.com/NamjuLee/Third-Place-Prediction-Report-V2022'
+        const url = 'https://github.com/NamjuLee/Third-Place-Prediction-Report-V2022';
         window.open(url, '_blank');
     }
     public destroy() {

@@ -3,10 +3,11 @@ export class Solution {
     constructor(div: HTMLElement) {
         this.hostDiv = div;
         const iframe = document.createElement('iframe');
-        iframe.src = 'https://namjulee.github.io/njs-lab-public/lab/machine-learning/tf-image-face?ui=0';
-        iframe.width = '100%'
-        iframe.height = '100%'
+        iframe.src = 'https://computationaldesign.tistory.com/55';
+        iframe.width = '100%';
+        iframe.height = '100%';
         iframe.style.background = '#fff';
+        iframe.style.border ='none';
         div.appendChild(iframe);
     }
     public destroy() {

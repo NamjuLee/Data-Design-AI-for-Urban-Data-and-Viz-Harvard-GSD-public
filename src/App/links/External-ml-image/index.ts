@@ -6,7 +6,7 @@ export class Solution {
         iframe.src = 'https://namjulee.github.io/njs-lab-public/lab/machine-learning/tf-image-face?ui=0';
         iframe.width = '100%';
         iframe.height = '100%';
-        iframe.style.border = '0px';
+        iframe.style.border ='none';
         iframe.style.background = '#fff';
         div.appendChild(iframe);
     }

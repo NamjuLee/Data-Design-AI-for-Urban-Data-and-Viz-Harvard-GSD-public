@@ -151,6 +151,8 @@ LAB 03 - Smart Drawing
 
 LAB 04 - Digital Texture prediction, 
 
+LAB 05 - Map Classifier, 
+
 Examples - Map classification, GAN ...
 
 ---------------------------------

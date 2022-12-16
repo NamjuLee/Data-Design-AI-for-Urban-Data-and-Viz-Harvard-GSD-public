@@ -6,8 +6,9 @@ export class Solution {
         this.hostDiv = div;
         const iframe = document.createElement('iframe');
         iframe.src = 'http://www.njstudio.co.kr/main/project/2016_MobilityEnergyConsumptionMITMediaLab/index.html';
-        iframe.width = '100%'
-        iframe.height = '100%'
+        iframe.width = '100%';
+        iframe.height = '100%';
+        iframe.style.border ='none';
         iframe.style.background = '#fff';
         div.appendChild(iframe);
     }

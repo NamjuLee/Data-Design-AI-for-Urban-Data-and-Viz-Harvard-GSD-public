@@ -39,7 +39,10 @@ const ProgrammingDataProcess: LinkInfo = {
 // ......................................... 2
 const Geometry: LinkInfo = {
     id: 'Vector & Raster', env: ENV.DEFAULT, keywords: [], subLinks: [
-        { id: 'Vector and Operation', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../App/links/External-Vector-operation').then(({ Solution }) => { return new Solution(param.view as HTMLDivElement) }); } },
+        { id: 'Vector and Operation', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../App/links/External-Data-Vector-operation').then(({ Solution }) => { return new Solution(param.view as HTMLDivElement) }); } },
+        { id: 'Geometry', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../App/links/External-Data-Geometry').then(({ Solution }) => { return new Solution(param.view as HTMLDivElement) }); } },
+        { id: 'Raster', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../App/links/External-Data-Raster').then(({ Solution }) => { return new Solution(param.view as HTMLDivElement) }); } },
+        { id: 'Color', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../App/links/External-Data-Color').then(({ Solution }) => { return new Solution(param.view as HTMLDivElement) }); } },
     ]
 };
 const GeometryImplementation: LinkInfo = {
@@ -59,7 +62,6 @@ const GeometryImplementation: LinkInfo = {
 const Model: LinkInfo = {
     id: 'AI for Design', env: ENV.DEFAULT, keywords: [], subLinks: [
         { id: 'AI for Design', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../App/links/External-ai-for-designers').then(({ Solution }) => { return new Solution(param.view as HTMLDivElement) }); } },
-        'divider',
     ]
 };
 const ModelImplementation: LinkInfo = {
@@ -115,6 +117,7 @@ const DigitalMappingVizLab: LinkInfo = {
     id: 'Digital-Mapping-Lab', env: ENV.DEFAULT, keywords: ['tf', 'tensor', 'flow', 'js',], subLinks: [
         { id: 'template', env: ENV.JSAPI, keywords: [], load: (param) => { return import('./01_Template').then(({ Solution }) => { return new Solution(param.view) }); } },
         { id: 'starter', env: ENV.JSAPI, keywords: [], load: (param) => { return import('./02_Starter').then(({ Solution }) => { return new Solution(param.view) }); } },
+        'divider',
         { id: 'CSV(TSV)', env: ENV.JSAPI, keywords: [], load: (param) => { return import('./03_CSV').then(({ Solution }) => { return new Solution(param.view) }); } },
         { id: 'JSON', env: ENV.JSAPI, keywords: [], load: (param) => { return import('./04_JSON').then(({ Solution }) => { return new Solution(param.view) }); } },
         { id: 'JSON-Line', env: ENV.JSAPI, keywords: [], load: (param) => { return import('./04_JSON/MultiLineString').then(({ Solution }) => { return new Solution(param.view) }); } },
@@ -122,6 +125,7 @@ const DigitalMappingVizLab: LinkInfo = {
         'divider',
         { id: 'Polygon', env: ENV.JSAPI, keywords: [], load: (param) => { return import('./14_Polygon').then(({ Solution }) => { return new Solution(param.view) }); } },
         { id: 'Polygon Interaction', env: ENV.JSAPI, keywords: [], load: (param) => { return import('./14_Polygon/MouserInteraction').then(({ Solution }) => { return new Solution(param.view) }); } },
+        'divider',
     ]
 };
 export const LAB_LINKS: LinkInfo[] = [

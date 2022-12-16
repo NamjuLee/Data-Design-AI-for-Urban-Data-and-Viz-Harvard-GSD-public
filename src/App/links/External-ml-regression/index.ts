@@ -4,11 +4,10 @@ export class Solution {
         this.hostDiv = div;
         const iframe = document.createElement('iframe');
         iframe.src = 'https://namjulee.github.io/njs-lab-public/lab/machine-learning/polynomial-regression?ui=0';
-        iframe.width = '100%'
-        iframe.height = '100%'
-        iframe.style.border = '0px';
+        iframe.width = '100%';
+        iframe.height = '100%';
+        iframe.style.border ='none';
         iframe.style.background = '#fff';
-        iframe.style.border = '0px';
         div.appendChild(iframe);
     }
     public destroy() {

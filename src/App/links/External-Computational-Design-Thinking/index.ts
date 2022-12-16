@@ -4,9 +4,10 @@ export class Solution {
         this.hostDiv = div;
         const iframe = document.createElement('iframe');
         iframe.src = 'https://computationaldesign.tistory.com/51';
-        iframe.width = '100%'
-        iframe.height = '100%'
+        iframe.width = '100%';
+        iframe.height = '100%';
         iframe.style.background = '#fff';
+        iframe.style.border ='none';
         div.appendChild(iframe);
     }
     public destroy() {

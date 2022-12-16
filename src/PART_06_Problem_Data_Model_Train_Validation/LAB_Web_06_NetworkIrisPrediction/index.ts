@@ -89,7 +89,7 @@ export class Renderer extends RendererCanvas {
                 let projected_X_Acc = remap(i, 0, this.accList.length,  0, this.canvas.width);
                 let projected_Y_Acc = remap(acc, maxY, minY,  0, this.canvas.height);
 
-                if (i == 0) {
+                if (i === 0) {
                     ctx.beginPath();
                     ctx.moveTo(projected_X_Acc, projected_Y_Acc);
                 } else {

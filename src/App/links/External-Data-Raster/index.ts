@@ -3,12 +3,13 @@ export class Solution {
     constructor(div: HTMLElement) {
         this.hostDiv = div;
         
-        const url = 'https://computationaldesign.tistory.com/53'
+        const url = 'https://computationaldesign.tistory.com/53';
         const iframe = document.createElement('iframe');
         iframe.src = url;
-        iframe.width = '100%'
-        iframe.height = '100%'
+        iframe.width = '100%';
+        iframe.height = '100%';
         iframe.style.background = '#fff';
+        iframe.style.border ='none';
         div.appendChild(iframe);
     }
     public destroy() {
