@@ -74,7 +74,7 @@ const ModelImplementation: LinkInfo = {
         // 
         { id: 'TFJS-MPG', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../PART_06_Problem_Data_Model_Train_Validation/LAB_Web_03_MPGPrediction').then(({ Solution }) => { return new Solution(param.containerID) }); } },
         { id: 'Polynomial-regression', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../App/links/External-ml-regression').then(({ Solution }) => { return new Solution(param.view as HTMLElement) }); } },
-        { id: 'TFJS-KNN', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../PART_06_Problem_Data_Model_Train_Validation/LAB_Web_05_KNNIrisPrediction').then(({ Solution }) => { return new Solution(param.containerID) }); } },
+        { id: 'TFJS-KNN', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../App/links/External-ml-knn').then(({ Solution }) => { return new Solution(param.view as HTMLElement) }); } },
         { id: 'TFJS-IRIS', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../PART_06_Problem_Data_Model_Train_Validation/LAB_Web_06_NetworkIrisPrediction').then(({ Solution }) => { return new Solution(param.containerID) }); } },
         'divider', 
         { id: 'Smart Drawing', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../PART_06_Problem_Data_Model_Train_Validation/LAB_03_SmartDrawing/src/App').then(({ AppSmartDrawing }) => { return new AppSmartDrawing(param.containerID) }); } },
