@@ -24,6 +24,82 @@ export class Solution {
         // theListB.push(6)
         // console.log(theListB)
 
+        // array
+
+        // // Reference
+        // // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
+
+        // // Create an Array
+        // let fruits = ['Apple', 'Banana']
+        // console.log('fruits length', fruits.length) // 2
+
+
+        // // Access an Array item using the index position
+        // let first = fruits[0]
+        // console.log('first', first)
+
+        // let last = fruits[fruits.length - 1]
+        // console.log('last', last)
+
+        // first = 'Fineapple';
+        // console.log(fruits)
+
+
+        // // Modify an iteam in an Array
+        // fruits[0] = 'Fineapple';
+        // console.log(fruits)
+
+
+        // // Add an item to the end of an Array
+        // fruits.push('Orange')
+        // console.log(fruits)
+
+
+        // // Remove an item from the end of an Array
+        // let last = fruits.pop() // remove Orange (from the end)
+        // console.log(fruits) // ["Fineapple", "Banana"]
+
+
+        // // Add an item to the beginning of an Array
+        // let newLength = fruits.unshift('Strawberry') // add to the front
+        // console.log(fruits) // ["Strawberry", "Fineapple", "Banana"]
+
+
+        // // Remove an item from the beginning of an Array
+        // let indexNumber = fruits.indexOf('Fineapple')
+        // console.log(indexNumber);
+
+
+        // // Remove an item by index position
+        // let removedItem = fruits.splice(indexNumber, 1) // this is how to remove an item         
+        // console.log(fruits);
+
+
+        // // Check an iteam
+        // console.log('includes apple?',fruits.includes('banana'));
+        // console.log('includes apple?',fruits.includes('Banana'));
+
+
+        // // Merge arrays
+        // let array1 = ['a', 'b', 'c'];
+        // let array2 = ['d', 'e', 'f'];
+        // let array3 = array1.concat(array2);
+        // console.log(array3);
+
+
+        // // Loop an array
+        // // javascript function
+        // for(let index = 0 ; index < array3.length; ++index) {
+        // 	  console.log('by for loop :', array3[index], index);
+        // }
+        // array3.forEach(function(item, index) {
+        //   console.log('by foreach :',item, index)
+        // })
+        // // Arrow function
+        // array3.forEach((item, index) => {
+        //   console.log('by arrow function :', item, index)
+        // })
+
 
         // 9. .................... String
         // Python
@@ -46,6 +122,42 @@ export class Solution {
         // 		console.log(d, 'from foreach')
         // 	}
         // );
+
+        // Reference
+        // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+
+        // Create an string
+        let string1 = "A string primitive";
+        let string2 = 'Also a string primitive';
+        console.log(string1);
+
+        let s3 = string1 + ' , ' + string2
+        console.log(s3);
+
+
+        let stringArray = s3.split(' ');
+        console.log(stringArray);
+
+        stringArray.forEach((item, index) => {
+            console.log('by foreach :', item, index)
+        })
+
+
+        //
+        let s4 = string1 + 123 + 456;
+        console.log('add strings', s4);
+
+        //
+        let word1 = 'a'
+        let word2 = 'A'
+        console.log(word1 === word2);
+
+
+        let word3 = '1'
+        let word4 = 1
+        // console.log('compare word1 with word2', word3 === word4);
+        console.log('by the function', parseFloat(word3) === word4);
+        console.log('by + ', +word3 === word4);
 
 
         // 9. .................... Matrix (list of list)
@@ -73,6 +185,7 @@ export class Solution {
 
         // console.log( 'index [1][0] ', myArrayOfArray[1][0] )
 
+    
 
         // 9. .................... Object
         // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map
@@ -99,6 +212,15 @@ export class Solution {
         // 	console.log('key', i, ', value: ', myObject[i]);
         // }
 
+        // // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map
+
+        // const object = { a: 1, b: 2, c: 3 };
+
+        // for (const property in object) {
+        //   console.log(`${property}: ${object[property]}`);
+        // }
+
+
 
         // // JSON stringify
         // const stringJSon = JSON.stringify(myObject)
@@ -111,6 +233,9 @@ export class Solution {
 
     }
     public destroy() {
-        
+
     }
 }
+
+
+

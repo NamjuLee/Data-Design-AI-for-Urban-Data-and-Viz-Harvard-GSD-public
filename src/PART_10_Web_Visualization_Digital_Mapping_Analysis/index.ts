@@ -56,6 +56,11 @@ const GeometryImplementation: LinkInfo = {
         'divider',
         { id: 'Three-Mesh', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../PART_04_Geometry_Data/LAB_Web_05_Mesh').then(({ Solution }) => { return new Solution(param.containerID) }); } },
         { id: 'Three-Mesh-Rhino', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../PART_04_Geometry_Data/LAB_Web_06_MeshRhino').then(({ Solution }) => { return new Solution(param.containerID) }); } },
+        'divider',
+        { id: 'Geometry As Data Structure', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../PART_04_Geometry_Data/LAB_Web_07_GeometryAsDataStructure').then(({ Solution }) => { return new Solution(param.view as HTMLDivElement) }); } },
+        { id: 'Graph', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../PART_04_Geometry_Data/LAB_Web_08_Graph').then(({ Solution }) => { return new Solution(param.view as HTMLDivElement) }); } },
+        { id: 'Pixel', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../PART_04_Geometry_Data/LAB_Web_09_Pixel').then(({ Solution }) => { return new Solution(param.view as HTMLDivElement) }); } },
+        { id: 'Voxel', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../PART_04_Geometry_Data/LAB_Web_10_Voxel').then(({ Solution }) => { return new Solution(param.view as HTMLDivElement) }); } },
     ]
 };
 // ......................................... 3
@@ -70,17 +75,17 @@ const ModelImplementation: LinkInfo = {
         'divider',
         { id: 'TFJS-Tensor', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../PART_06_Problem_Data_Model_Train_Validation/LAB_Web_01_Tensor').then(({ Solution }) => { return new Solution(param.containerID) }); } },
         { id: 'TFJS-Linear-Regression', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../PART_06_Problem_Data_Model_Train_Validation/LAB_Web_02_ModelLinearRegression').then(({ Solution }) => { return new Solution(param.containerID) }); } },
-        
+
         // 
         { id: 'TFJS-MPG', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../PART_06_Problem_Data_Model_Train_Validation/LAB_Web_03_MPGPrediction').then(({ Solution }) => { return new Solution(param.containerID) }); } },
         { id: 'Polynomial-regression', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../App/links/External-ml-regression').then(({ Solution }) => { return new Solution(param.view as HTMLElement) }); } },
         { id: 'TFJS-KNN', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../App/links/External-ml-knn').then(({ Solution }) => { return new Solution(param.view as HTMLElement) }); } },
         { id: 'TFJS-IRIS', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../PART_06_Problem_Data_Model_Train_Validation/LAB_Web_06_NetworkIrisPrediction').then(({ Solution }) => { return new Solution(param.containerID) }); } },
-        'divider', 
+        'divider',
         { id: 'Smart Drawing', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../PART_06_Problem_Data_Model_Train_Validation/LAB_03_SmartDrawing/src/App').then(({ AppSmartDrawing }) => { return new AppSmartDrawing(param.containerID) }); } },
         { id: 'Image-Face', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../App/links/External-ml-image').then(({ Solution }) => { return new Solution(param.view as HTMLElement) }); } },
         { id: 'Video-Face', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../App/links/Link-ml-video').then(({ Solution }) => { return new Solution(param.view as HTMLElement) }); } },
-       
+
     ]
 };
 // ......................................... 4
@@ -98,6 +103,8 @@ const ThirdPlaceResearch: LinkInfo = {
 const ThirdPlaceResearchViz: LinkInfo = {
     id: 'Third Place Viz', env: ENV.DEFAULT, keywords: [], subLinks: [
         { id: 'Third-place-init', env: ENV.JSAPI, keywords: [], load: (param) => { return import('../PART_08_Third_Place_Prediction_Implementation/Project_01_Third_Place').then(({ Solution }) => { return new Solution(param.view) }); } },
+        { id: 'Third-place-Result', env: ENV.JSAPI, keywords: [], load: (param) => { return import('../PART_08_Third_Place_Prediction_Implementation/Project_02_Third_Place_Results').then(({ Solution }) => { return new Solution(param.view) }); } },
+        { id: 'Third-place-Result-Interpolation', env: ENV.JSAPI, keywords: [], load: (param) => { return import('../PART_08_Third_Place_Prediction_Implementation/Project_03_Third_Place_Results_Interpolation').then(({ Solution }) => { return new Solution(param.view) }); } },
         'divider',
     ]
 };
@@ -108,6 +115,7 @@ const Typescript_Lab: LinkInfo = {
         { id: 'Condition-Loop', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../PART_09_Visualization_Typescript/02_Condition_Loop').then(({ Solution }) => { return new Solution(param.containerID) }); } },
         { id: 'Data Structure and Format', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../PART_09_Visualization_Typescript/03_Data_Structure').then(({ Solution }) => { return new Solution(param.containerID) }); } },
         { id: 'Function and Class', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../PART_09_Visualization_Typescript/04_Function_Class').then(({ Solution }) => { return new Solution(param.containerID) }); } },
+        { id: 'Animal Class', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../PART_09_Visualization_Typescript/04_Function_Class/Animal').then(({ Solution }) => { return new Solution(param.containerID) }); } },
         'divider',
         { id: 'Exercise', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../PART_09_Visualization_Typescript/05_Exercise').then(({ Solution }) => { return new Solution(param.containerID) }); } },
 
@@ -118,16 +126,46 @@ const DigitalMappingVizLab: LinkInfo = {
         { id: 'template', env: ENV.JSAPI, keywords: [], load: (param) => { return import('./01_Template').then(({ Solution }) => { return new Solution(param.view) }); } },
         { id: 'starter', env: ENV.JSAPI, keywords: [], load: (param) => { return import('./02_Starter').then(({ Solution }) => { return new Solution(param.view) }); } },
         'divider',
-        { id: 'CSV(TSV)', env: ENV.JSAPI, keywords: [], load: (param) => { return import('./03_CSV').then(({ Solution }) => { return new Solution(param.view) }); } },
-        { id: 'JSON', env: ENV.JSAPI, keywords: [], load: (param) => { return import('./04_JSON').then(({ Solution }) => { return new Solution(param.view) }); } },
+        { id: 'CSV(TSV)-Point', env: ENV.JSAPI, keywords: [], load: (param) => { return import('./03_CSV').then(({ Solution }) => { return new Solution(param.view) }); } },
+        { id: 'JSON-Point', env: ENV.JSAPI, keywords: [], load: (param) => { return import('./04_JSON').then(({ Solution }) => { return new Solution(param.view) }); } },
         { id: 'JSON-Line', env: ENV.JSAPI, keywords: [], load: (param) => { return import('./04_JSON/MultiLineString').then(({ Solution }) => { return new Solution(param.view) }); } },
         { id: 'REST-API', env: ENV.JSAPI, keywords: [], load: (param) => { return import('./05_REST_API').then(({ Solution }) => { return new Solution(param.view) }); } },
         'divider',
         { id: 'Polygon', env: ENV.JSAPI, keywords: [], load: (param) => { return import('./14_Polygon').then(({ Solution }) => { return new Solution(param.view) }); } },
         { id: 'Polygon Interaction', env: ENV.JSAPI, keywords: [], load: (param) => { return import('./14_Polygon/MouserInteraction').then(({ Solution }) => { return new Solution(param.view) }); } },
         'divider',
+
+
     ]
 };
+const ThreeVisualization: LinkInfo = {
+    id: '3D Viz for GIS', env: ENV.DEFAULT, keywords: [], subLinks: [
+        { id: 'Three-Starter', env: ENV.THREE, keywords: [], load: (param) => { return import('../PART_11_Web_Visualization_3D_for_GIS/LAB_Web_01_Starter-Three').then(({ Solution }) => { return new Solution(param.containerID) }); } },
+        'divider',
+        { id: 'Three-Primitive', env: ENV.THREE, keywords: [], load: (param) => { return import('../PART_11_Web_Visualization_3D_for_GIS/LAB_Web_02_PrimitiveGeometry').then(({ Solution }) => { return new Solution(param.containerID) }); } },
+        { id: 'Three-Point', env: ENV.THREE, keywords: [], load: (param) => { return import('../PART_11_Web_Visualization_3D_for_GIS/LAB_Web_03_Point').then(({ Solution }) => { return new Solution(param.containerID) }); } },
+        { id: 'Three-Line-Polyline', env: ENV.THREE, keywords: [], load: (param) => { return import('../PART_11_Web_Visualization_3D_for_GIS/LAB_Web_04_LinePolyline').then(({ Solution }) => { return new Solution(param.containerID) }); } },
+        { id: 'Three-Polygon', env: ENV.THREE, keywords: [], load: (param) => { return import('../PART_11_Web_Visualization_3D_for_GIS/LAB_Web_05_Polygon').then(({ Solution }) => { return new Solution(param.containerID) }); } },
+        { id: 'Three-Mesh-Box', env: ENV.THREE, keywords: [], load: (param) => { return import('../PART_11_Web_Visualization_3D_for_GIS/LAB_Web_06_Mesh').then(({ Solution }) => { return new Solution(param.containerID) }); } },
+        { id: 'Three-Mesh-Face', env: ENV.THREE, keywords: [], load: (param) => { return import('../PART_11_Web_Visualization_3D_for_GIS/LAB_Web_07_Mesh-Face').then(({ Solution }) => { return new Solution(param.containerID) }); } },
+        { id: 'Three-Mesh-Terrain', env: ENV.THREE, keywords: [], load: (param) => { return import('../PART_11_Web_Visualization_3D_for_GIS/LAB_Web_08_Mesh-Terrain').then(({ Solution }) => { return new Solution(param.containerID) }); } },
+        'divider',
+        { id: 'Three-Mesh-Vertex-Color', env: ENV.THREE, keywords: [], load: (param) => { return import('../PART_11_Web_Visualization_3D_for_GIS/LAB_Web_10_Mesh-Vertex-Color').then(({ Solution }) => { return new Solution(param.containerID); }); } },
+        { id: 'Three-Mesh-Rhino-Geo', env: ENV.THREE, keywords: [], load: (param) => { return import('../PART_11_Web_Visualization_3D_for_GIS/LAB_Web_11_MeshRhinoGeo').then(({ Solution }) => { return new Solution(param.containerID); }); } },
+        { id: 'Three-bunny', env: ENV.THREE, keywords: [], load: (param) => { return import('../PART_11_Web_Visualization_3D_for_GIS/LAB_Web_12_Bunny').then(({ Solution }) => { return new Solution(param.containerID); }); } },
+        { id: 'Three-Voxel', env: ENV.THREE, keywords: [], load: (param) => { return import('../PART_11_Web_Visualization_3D_for_GIS/LAB_Web_13_Voxel').then(({ Solution }) => { return new Solution(param.containerID); }); } },
+
+        'divider',
+        { id: '[Link]-Code-Pen', env: ENV.THREE, keywords: [], load: (param) => { return import('../App/links/Link-codepen-three').then(({ Solution }) => { return new Solution(param.view as HTMLDivElement); }); } },
+        'divider',
+        { id: 'Slow-zone-paper', env: ENV.THREE, keywords: [], load: (param) => { return import('../App/links/Link-Slow-zone-paper').then(({ Solution }) => { return new Solution(param.view as HTMLDivElement); }); } },
+        { id: 'Slow-zone-Point', env: ENV.THREE, keywords: [], load: (param) => { return import('../PART_11_Web_Visualization_3D_for_GIS/Slowzone_Point').then(({ Solution }) => { return new Solution(param.containerID); }); } },
+        { id: 'Slow-zone-Line', env: ENV.THREE, keywords: [], load: (param) => { return import('../PART_11_Web_Visualization_3D_for_GIS/Slowzone_Line').then(({ Solution }) => { return new Solution(param.containerID); }); } },
+        { id: 'Slow-zone-Polyline', env: ENV.THREE, keywords: [], load: (param) => { return import('../PART_11_Web_Visualization_3D_for_GIS/Slowzone_Polyline').then(({ Solution }) => { return new Solution(param.containerID); }); } },
+        { id: 'Slow-zone-Polygon', env: ENV.THREE, keywords: [], load: (param) => { return import('../PART_11_Web_Visualization_3D_for_GIS/Slowzone_Polygon').then(({ Solution }) => { return new Solution(param.containerID); }); } },
+        { id: 'Slow-zone-Viz', env: ENV.THREE, keywords: [], load: (param) => { return import('../App/links/External-Slow-zone-project').then(({ Solution }) => { return new Solution(param.view as HTMLDivElement); }); } },
+    ]
+}
 export const LAB_LINKS: LinkInfo[] = [
     DesignData,
     ProgrammingDataProcess,
@@ -143,6 +181,7 @@ export const LAB_LINKS: LinkInfo[] = [
     'divider',
     Typescript_Lab,
     DigitalMappingVizLab,
+    ThreeVisualization,
 ];
 const generateLookupTable = () => {
     const lookupTable = {}
