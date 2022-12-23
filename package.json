@@ -29,7 +29,7 @@
     "remark-gfm": "^3.0.1",
     "three": "^0.146.0",
     "three-addons": "^1.2.0",
-    "three-orbitcontrols-ts": "0.1.2",
+    "three-orbitcontrols-ts": "git+https://git@github.com/nicolaspanel/three-orbitcontrols-ts.git",
     "typescript": "^4.4.2",
     "web-vitals": "^2.1.0"
   },

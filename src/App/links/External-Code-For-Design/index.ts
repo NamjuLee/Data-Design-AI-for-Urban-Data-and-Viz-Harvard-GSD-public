@@ -3,7 +3,7 @@ export class Solution {
     constructor(div: HTMLElement) {
         this.hostDiv = div;
         const iframe = document.createElement('iframe');
-        iframe.src = 'https://computationaldesign.tistory.com/55';
+        iframe.src = 'https://computationaldesign.tistory.com/54';
         iframe.width = '100%';
         iframe.height = '100%';
         iframe.style.background = '#fff';

@@ -9750,27 +9750,26 @@ three-addons@^1.2.0:
   dependencies:
     three "^0.92.0"
 
-three-orbitcontrols-ts@0.1.2:
+"three-orbitcontrols-ts@git+https://git@github.com/nicolaspanel/three-orbitcontrols-ts.git":
   version "0.1.2"
-  resolved "https://registry.npmjs.org/three-orbitcontrols-ts/-/three-orbitcontrols-ts-0.1.2.tgz"
-  integrity sha512-HG45dhJX4010lt/Ohk2d2K0kBaxCS6NLO3+wG9BDfMM5ddH7zMPuF3fhcn8vI4eqcSITtid0OoHEttHhjkIKEQ==
+  resolved "git+https://git@github.com/nicolaspanel/three-orbitcontrols-ts.git#b5b2685a88b880822c62275f2a76bdaa3954f76c"
   dependencies:
-    three "^0.83.0"
+    three "^0.94.0"
 
 three@^0.146.0:
   version "0.146.0"
   resolved "https://registry.npmjs.org/three/-/three-0.146.0.tgz"
   integrity sha512-1lvNfLezN6OJ9NaFAhfX4sm5e9YCzHtaRgZ1+B4C+Hv6TibRMsuBAM5/wVKzxjpYIlMymvgsHEFrrigEfXnb2A==
 
-three@^0.83.0:
-  version "0.83.0"
-  resolved "https://registry.npmjs.org/three/-/three-0.83.0.tgz"
-  integrity sha512-x9TqsmvhHG/Lw16Zi9zbJ0ho+kP8SgIfsz8dJYZbeWaFWoVwdXKolQQAftkUlpuKDys1+6SZIBHoA2QdoZKByQ==
-
 three@^0.92.0:
   version "0.92.0"
   resolved "https://registry.npmjs.org/three/-/three-0.92.0.tgz"
   integrity sha512-yQzuwMDEyxc+TFHn8c+LtpK1Sqpy8I3FAr+1EoqqLmNmv6hjfFqB8PlYztRLuM4FMFb4hIbpUoP7Gc9bPQvkCg==
+
+three@^0.94.0:
+  version "0.94.0"
+  resolved "https://registry.yarnpkg.com/three/-/three-0.94.0.tgz#4ce6db7f2bfbf79c2d73444aa6e3cfc08a32d762"
+  integrity sha512-UFyqFrb/CaTAHStYaPNxNeddNo/wlApRMJK0oIWjx5WMj/xhgXWKMRuAJ+leZBIA4wgeqifrbjKiwmNiysgMLg==
 
 throat@^6.0.1:
   version "6.0.1"
