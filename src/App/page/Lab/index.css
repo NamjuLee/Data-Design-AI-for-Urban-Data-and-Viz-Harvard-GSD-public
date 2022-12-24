@@ -51,7 +51,8 @@ ol {
   
 .menu-left {
     /* background-color: blue; */
-    width: 180px;
+    min-width: 180px;
+    max-width: 180px;
     padding-left: 10px;
     padding-right: 10px;
 

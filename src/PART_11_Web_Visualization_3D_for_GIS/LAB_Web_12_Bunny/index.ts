@@ -43,19 +43,16 @@ export class Solution extends RendererThree {
         dirLight.shadow.mapSize.height = 2048;
         scene.add(dirLight);
 
-
-
         // ................................................................................
         // your code goes here
+        // https://en.wikipedia.org/wiki/Wavefront_.obj_file
+        getCSVFromURL('https://raw.githubusercontent.com/alecjacobson/common-3d-test-models/master/data/stanford-bunny.obj').then((d) => {
+            const lines = d.split(/\r\n|\r|\n/g);
+            console.log(lines);
 
+        });
 
-        // ................................................................................ 
-        // const loader = new THREE.ObjectLoader();
-        // loader.load('https://raw.githubusercontent.com/alecjacobson/common-3d-test-models/master/data/stanford-bunny.obj', (object) => {
-        //     scene.add(object);
-        // });
-
-        // this.start();
+        this.start();
     }
 
     public update(scene: THREE.Scene) {

@@ -17,19 +17,10 @@ export class Solution extends RendererThree {
         const light = new THREE.PointLight(0xffffff, 0.8);
         this.camera.add(light);
         this.scene.add(light);
-
-        const canvasGL = document.createElement('canvas');
-        canvasGL.style.position = 'absolute';
-        canvasGL.style.pointerEvents = 'none';
-        canvasGL.style.mixBlendMode = 'darken';
-        canvasGL.width = this.hostDiv.clientWidth;
-        canvasGL.height = this.hostDiv.clientHeight;
-        this.hostDiv.appendChild(canvasGL);
-        const glCtx = canvasGL.getContext('webgl');
-
-
         this.camera.position.set(0, 40, 48);
 
+        // ................................................................................
+        // your code goes here
         const path = '/static/research/slow-zone/';
         getJSONFromURL('https://raw.githubusercontent.com/NamjuLee/data/master/Paris/street_osm.geojson').then((data) => {
             for (let i = 0; i < data['features'].length; ++i) {

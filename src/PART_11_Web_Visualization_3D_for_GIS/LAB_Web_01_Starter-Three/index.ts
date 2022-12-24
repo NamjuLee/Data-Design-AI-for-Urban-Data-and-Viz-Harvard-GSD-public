@@ -29,7 +29,7 @@ export class Solution extends RendererThree {
         var matrix = new THREE.Matrix4();
         matrix.makeRotationY(Math.PI * 0.011);
         this.pointLight.position.applyMatrix4(matrix);
-
+        
     }
 
 }

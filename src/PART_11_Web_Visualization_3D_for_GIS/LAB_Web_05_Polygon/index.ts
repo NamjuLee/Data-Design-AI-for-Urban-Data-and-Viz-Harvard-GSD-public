@@ -8,15 +8,15 @@ export class Solution extends RendererThree {
     constructor(id: string = 'main') {
         super(id)
         const scene = this.scene;
-        this.camera.position.set( 0, 5, 50 );
+        this.camera.position.set(0, 5, 50);
 
-        
+
         const shape = [];
         const data = polylineData.split(',');
 
         for (let i = 0; i < data.length; i += 2) {
             const x = +data[i];
-            const y = parseFloat(data[i+1]);
+            const y = parseFloat(data[i + 1]);
             shape.push(new THREE.Vector2(x, y));
         }
 
@@ -33,12 +33,6 @@ export class Solution extends RendererThree {
 
         this.start();
     }
-
-    public update(scene: THREE.Scene) {
-
-
-    }
-
 }
 
 // Generated from Rhino Grasshopper

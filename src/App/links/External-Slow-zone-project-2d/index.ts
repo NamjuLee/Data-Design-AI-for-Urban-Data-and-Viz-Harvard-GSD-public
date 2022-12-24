@@ -3,13 +3,12 @@ export class Solution {
     constructor(div: HTMLElement) {
         this.hostDiv = div;
         const iframe = document.createElement('iframe');
-        iframe.src = 'https://namjulee.github.io/njs-lab-public/data-in-design?ui=0';
+        iframe.src = 'https://namjulee.github.io/njs-lab-public/lab/project-slow-zone/project-slow-zone-jsapi?ui=0';
         iframe.width = '100%';
         iframe.height = '100%';
-        iframe.style.background = '#000';
-        iframe.style.border = '0px';
+        iframe.style.background = '#fff';
+        iframe.style.border = 'none';
         div.appendChild(iframe);
-
     }
     public destroy() {
         while (this.hostDiv.lastElementChild) {

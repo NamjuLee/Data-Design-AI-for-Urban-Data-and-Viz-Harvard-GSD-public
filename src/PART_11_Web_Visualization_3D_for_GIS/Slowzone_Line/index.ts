@@ -22,6 +22,9 @@ export class Solution extends RendererThree {
 
         this.camera.position.set(0, 30, 30);
 
+        // ................................................................................
+        // your code goes here
+
         getJSONFromURL('https://raw.githubusercontent.com/NamjuLee/data/master/Paris/street_osm.geojson').then((data) => {
             for (let i = 0; i < data['features'].length; ++i) {
                 this.streetOSM.push(data['features'][i]['geometry']['coordinates']);

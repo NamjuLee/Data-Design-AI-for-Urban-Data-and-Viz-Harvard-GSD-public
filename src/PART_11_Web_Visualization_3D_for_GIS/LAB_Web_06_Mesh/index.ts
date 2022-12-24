@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import { RendererThree, getCSVFromURL } from '../../lib';
+import { RendererThree } from '../../lib';
 
 
 export class Solution extends RendererThree {
@@ -10,7 +10,6 @@ export class Solution extends RendererThree {
         super(id)
         const scene = this.scene;
         this.camera.position.set(0, 9, 9);
-
 
         /*
               6----7
@@ -24,13 +23,13 @@ export class Solution extends RendererThree {
 
         const vertices = [
             -1, -1, 1,  // 0
-            1, -1, 1,  // 1
-            -1, 1, 1,  // 2
-            1, 1, 1,  // 3
-            -1, -1, -1,  // 4
+            1, -1, 1,   // 1
+            -1, 1, 1,   // 2
+            1, 1, 1,    // 3
+            -1, -1, -1, // 4
             1, -1, -1,  // 5
             -1, 1, -1,  // 6
-            1, 1, -1,  // 7
+            1, 1, -1,   // 7
         ];
 
         const indices = [
@@ -73,7 +72,6 @@ export class Solution extends RendererThree {
 
         const mesh = new THREE.Mesh(geometry, material);
         scene.add(mesh);
-
 
         this.start();
     }

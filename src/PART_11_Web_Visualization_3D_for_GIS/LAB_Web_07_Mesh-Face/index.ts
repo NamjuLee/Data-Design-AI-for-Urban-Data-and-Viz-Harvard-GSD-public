@@ -21,14 +21,14 @@ export class Solution extends RendererThree {
             0----1
         */
 
-        const v0 = [-1, -1, 1]; // 0
-        const v1 = [1, -1, 1]; // 1
-        const v2 = [-1, 1, 1]; // 2
-        const v3 = [1, 1, 1]; // 3
+        const v0 = [-1, -1, 1];  // 0
+        const v1 = [1, -1, 1];   // 1
+        const v2 = [-1, 1, 1];   // 2
+        const v3 = [1, 1, 1];    // 3
         const v4 = [-1, -1, -1]; // 4
-        const v5 = [1, -1, -1]; // 5
-        const v6 = [-1, 1, -1]; // 6
-        const v7 = [1, 1, -1]; // 7
+        const v5 = [1, -1, -1];  // 5
+        const v6 = [-1, 1, -1];  // 6
+        const v7 = [1, 1, -1];   // 7
 
         const vertices = [
             // ........................ front
@@ -87,11 +87,11 @@ export class Solution extends RendererThree {
         ];
 
         const indices = [
-            0, 1, 2, // front 1
-            3, 4, 5, // front 2
+            0, 1, 2,    // front 1
+            3, 4, 5,    // front 2
 
-            6, 7, 8, // right 1
-            9, 10, 11, // right 2
+            6, 7, 8,    // right 1
+            9, 10, 11,  // right 2
 
             12, 13, 14, // back 1
             15, 16, 17, // back 2

@@ -1,0 +1,23 @@
+
+https://namjulee.github.io/njs-lab-public/lab/project-slow-zone/project-slow-zone-viz?ui=0&local_ui=false&posCamera=29.483,121.5247,176.1508&posTarget=4.269852,-6.45155,7.54423&colorMainStreet=ff0000&colorSOMStreet=00ff00&colorTreatedStreet=0000ff&colorControlStreet=ffffff&colorZones30=333333&colorYearPolygon=00f00f&year=2012&scale=0.95&colorScale=3.75&colorVizBottom=0000ff&colorVizTop=ff0000&dataLayer=noNeighbsLogDensity
+
+---------- PARAMETERS
+
+ui=0&
+local_ui=false&
+
+posCamera=29.483,121.5247,176.1508&
+posTarget=4.269852,-6.45155,7.54423&
+
+colorMainStreet=ffffff&
+colorSOMStreet=ffffff&
+colorTreatedStreet=ffffff&
+colorControlStreet=ffffff&
+colorZones30=ffffff&
+colorYearPolygon=ffffff&
+
+year=2012&
+scale=2.5&
+colorScale=1.75&
+dataLayer=noNeighbsWins
+

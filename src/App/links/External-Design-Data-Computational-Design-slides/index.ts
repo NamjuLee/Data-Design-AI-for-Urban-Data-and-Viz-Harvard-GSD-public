@@ -3,7 +3,7 @@ export class Solution {
     constructor(div: HTMLElement) {
         this.hostDiv = div;
         const iframe = document.createElement('iframe');
-        iframe.src = 'https://namjulee.github.io/njs-lab-public/data-in-design?ui=0';
+        iframe.src = process.env.PUBLIC_URL + '/reference/computationalDesign.pdf?transparent=0#toolbar=0';
         iframe.width = '100%';
         iframe.height = '100%';
         iframe.style.background = '#000';

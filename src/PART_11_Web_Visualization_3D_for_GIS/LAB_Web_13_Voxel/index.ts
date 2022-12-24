@@ -46,7 +46,8 @@ export class Solution extends RendererThree {
         const distance = (x, y, z, xx, yy, zz) => {
             return Math.sqrt((xx - x) * (xx - x) + (yy - y) * (yy - y) + (zz - z) * (zz - z));
         }
-
+        // ................................................................................
+        // your code goes here
         // https://en.wikipedia.org/wiki/Wavefront_.obj_file
         const URL_OBJ = 'https://raw.githubusercontent.com/McNopper/OpenGL/master/Binaries/bunny.obj';
         const geometryObj = {
@@ -82,9 +83,6 @@ export class Solution extends RendererThree {
         });
 
         const voxelization = (obj) => {
-            // ................................................................................
-            // your code goes here
-
             const theDis = .07;
 
             const xNum = 15;

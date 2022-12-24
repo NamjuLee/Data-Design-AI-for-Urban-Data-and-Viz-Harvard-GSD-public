@@ -1,7 +1,6 @@
 import * as THREE from 'three';
 import { RendererThree, getCSVFromURL } from '../../lib';
 
-
 export class Solution extends RendererThree {
 
     pointLight: THREE.PointLight
@@ -55,7 +54,6 @@ export class Solution extends RendererThree {
 
             this.start();
         });
-
 
     }
 }

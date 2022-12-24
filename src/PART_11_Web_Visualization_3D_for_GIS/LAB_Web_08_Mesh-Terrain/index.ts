@@ -11,15 +11,15 @@ export class Solution extends RendererThree {
         const scene = this.scene;
         this.camera.position.set(0, 80, 80);
 
-        const path0 = 'https://upload.wikimedia.org/wikipedia/commons/5/57/Heightmap.png';
-        const path1 = 'https://upload.wikimedia.org/wikipedia/commons/1/15/Srtm_ramp2.world.21600x10800.jpg';
-        const path2 = 'https://raw.githubusercontent.com/NamjuLee/data/master/img/heightMap/Heightmap_01.png';
-        const path3 = 'https://raw.githubusercontent.com/NamjuLee/data/master/img/heightMap/Heightmap_02.jpg';
-        const path4 = 'https://raw.githubusercontent.com/NamjuLee/data/master/img/heightMap/Heightmap_03.jpg';
+        let path;
+        path = 'https://upload.wikimedia.org/wikipedia/commons/5/57/Heightmap.png';
+        // path = 'https://upload.wikimedia.org/wikipedia/commons/1/15/Srtm_ramp2.world.21600x10800.jpg';
+        // path = 'https://raw.githubusercontent.com/NamjuLee/data/master/img/heightMap/Heightmap_01.png';
+        // path = 'https://raw.githubusercontent.com/NamjuLee/data/master/img/heightMap/Heightmap_02.jpg';
+        // path = 'https://raw.githubusercontent.com/NamjuLee/data/master/img/heightMap/Heightmap_03.jpg';
 
-
-        const img = new Image(); // Create new img element
-        img.src = path3;
+        const img = new Image();
+        img.src = path;
         img.crossOrigin = "Anonymous";
         img.onload = () => {
             buildMeshByImg(img);
@@ -43,8 +43,8 @@ export class Solution extends RendererThree {
             canvas.width = width;
             canvas.height = height;
             this.hostDiv.append(canvas);
-            const ctx = canvas.getContext('2d', {willReadFrequently: true} );
-    
+            const ctx = canvas.getContext('2d', { willReadFrequently: true });
+
             ctx.drawImage(img, 0, 0);
 
             const vertices = [];
@@ -61,15 +61,15 @@ export class Solution extends RendererThree {
             for (let y = 0; y < yNum - 1; ++y) {
                 for (let x = 0; x < xNum - 1; ++x) {
                     let index = x + (y * xNum);
-                    faces.push(index, index + xNum, index + 1, );
-                    faces.push(index + 1, index + xNum, index + xNum + 1, );
+                    faces.push(index, index + xNum, index + 1,);
+                    faces.push(index + 1, index + xNum, index + xNum + 1,);
                 }
             }
 
             const material = new THREE.MeshNormalMaterial({
                 // side: THREE.DoubleSide,
                 vertexColors: true,
-                flatShading: false,
+                flatShading: true,
             });
             const geometry = new THREE.BufferGeometry();
             geometry.setIndex(faces);
@@ -77,7 +77,7 @@ export class Solution extends RendererThree {
 
             geometry.computeVertexNormals();
             geometry.computeBoundingBox();
-            
+
             const mesh = new THREE.Mesh(geometry, material);
             mesh.rotateX(Math.PI * 0.5);
             scene.add(mesh);

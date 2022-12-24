@@ -2,14 +2,14 @@ export class Solution {
     hostDiv;
     constructor(div: HTMLElement) {
         this.hostDiv = div;
+        const url = 'https://namjulee.github.io/njs-lab-public/lecture-workshop?ui=0';
         const iframe = document.createElement('iframe');
-        iframe.src = 'https://namjulee.github.io/njs-lab-public/data-in-design?ui=0';
+        iframe.src = url;
         iframe.width = '100%';
         iframe.height = '100%';
-        iframe.style.background = '#000';
-        iframe.style.border = '0px';
+        iframe.style.border ='none';
+        iframe.style.background = '#fff';
         div.appendChild(iframe);
-
     }
     public destroy() {
         while (this.hostDiv.lastElementChild) {

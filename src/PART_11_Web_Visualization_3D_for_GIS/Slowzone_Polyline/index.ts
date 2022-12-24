@@ -15,10 +15,10 @@ export class Solution extends RendererThree {
         const light = new THREE.PointLight(0xffffff, 0.8);
         this.camera.add(light);
         this.scene.add(light);
-  
-
         this.camera.position.set(0, 40, 48);
 
+        // ................................................................................
+        // your code goes here
         const path = '/static/research/slow-zone/';
         getJSONFromURL('https://raw.githubusercontent.com/NamjuLee/data/master/Paris/street_osm.geojson').then((data) => {
             for (let i = 0; i < data['features'].length; ++i) {
