@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { LinkInfo } from "../../../PART_10_Web_Visualization_Digital_Mapping_Analysis";
+import { LinkInfo } from "../../Lab";
 import SeparatorSubmenu from "../utils/SeparatorSubmenu";
 
 export const LinkList = ({ links }: { links: LinkInfo[] }) => {
