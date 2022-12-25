@@ -7456,10 +7456,10 @@ neo-async@^2.6.2:
   resolved "https://registry.npmjs.org/neo-async/-/neo-async-2.6.2.tgz"
   integrity sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==
 
-njscore@~0.1.25:
-  version "0.1.25"
-  resolved "https://registry.yarnpkg.com/njscore/-/njscore-0.1.25.tgz#22fbdeedc13f80ec3fc7bbea2f3406ae862054ee"
-  integrity sha512-tcT+l+ppLmGT6hbvaggpxKSgjhdx26MYN88ZPR+HmkFD4fp0HI5OksOjKWql/8pZ0Ztu/8UY2vlS7HGRm1CN3w==
+njscore@~0.1.30:
+  version "0.1.30"
+  resolved "https://registry.yarnpkg.com/njscore/-/njscore-0.1.30.tgz#f3f1166a12042204437626036dc343e9983d02e2"
+  integrity sha512-yPxyG07iSqCP/KljEkSykp6klnmPSj9PZs25RDVUJRqorZqsT4LuNVu9b12GUBlEl7I2r7HpFVQhrszlVVqaZw==
 
 no-case@^3.0.4:
   version "3.0.4"

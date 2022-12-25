@@ -2,7 +2,7 @@ import { RendererCanvas } from '../../lib';
 
 export class Solution extends RendererCanvas {
 
-    constructor(div: HTMLElement) {
+    constructor(div: HTMLDivElement) {
         super(div);
 
         this.canvas.style.background = '#fff';
@@ -54,7 +54,7 @@ export class Solution extends RendererCanvas {
 
         const listPoint2 = []
 
-        this.hostDiv.addEventListener('click', (e: MouseEvent) => {
+        this.divHost.addEventListener('click', (e: MouseEvent) => {
             ctx.clearRect(-200, -200, 400, 400);
             
             console.log(`mouse x: ${e.offsetX}, y: ${e.offsetY}`);

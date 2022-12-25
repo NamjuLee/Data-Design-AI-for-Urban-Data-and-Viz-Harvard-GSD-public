@@ -8,38 +8,38 @@ export enum ENV {
     THREE = 'three',
     CANVAS = 'canvas',
     WEBGL2 = 'webgl2',
-}
+};
 interface Params {
     idContainer: string;
     idApp: string;
     env: ENV;
     view?: MapView
-}
+};
 export type LinkInfo = {
     id: string;
     env: ENV;
-    subLinks?: LinkInfo[]
-    keywords?: string[]
+    subLinks?: LinkInfo[];
+    keywords?: string[];
     load?: (param: { containerID: string; view: MapView | HTMLElement | undefined; }) => Promise<any>;
 } | 'divider';
 // ......................................... 1
 const DesignData: LinkInfo = {
-    id: 'Design-and-Data', env: ENV.DEFAULT, keywords: ['data design lecture'], subLinks: [
+    id: 'Design-and-Data', env: ENV.DEFAULT, keywords: ['data design lecture computational design gis vector raster data thinking process'], subLinks: [
         { id: 'Data-and-Design', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../links/External-Design-Data-Computational-Design').then(({ Solution }) => { return new Solution(param.view as HTMLDivElement) }); } },
         { id: 'Data-and-Design-slides', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../links/External-Design-Data-Computational-Design-slides').then(({ Solution }) => { return new Solution(param.view as HTMLDivElement) }); } },
         { id: 'Data-and-Design-Lecture', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../links/External-Design-Data').then(({ Solution }) => { return new Solution(param.view as HTMLDivElement) }); } },
     ]
-}
+};
 const ProgrammingDataProcess: LinkInfo = {
-    id: 'Programming-and-Data-Process', env: ENV.DEFAULT, keywords: ['python programming'], subLinks: [
+    id: 'Programming-and-Data-Process', env: ENV.DEFAULT, keywords: ['python programming python numpy pandas data processing'], subLinks: [
         { id: 'Code-For-Design-and-Programming', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../links/External-Code-For-Design').then(({ Solution }) => { return new Solution(param.view as HTMLElement) }); } },
         { id: 'Computational-Design-Thinking', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../links/External-Computational-Design-Thinking').then(({ Solution }) => { return new Solution(param.view as HTMLElement) }); } },
         { id: 'Python-Code-(GitHub)', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../links/Link-Programming-Data-Processing').then(({ Solution }) => { return new Solution(param.view as HTMLElement) }); } },
     ]
-}
+};
 // ......................................... 2
 const Geometry: LinkInfo = {
-    id: 'Vector-and-Raster', env: ENV.DEFAULT, keywords: [], subLinks: [
+    id: 'Vector-and-Raster', env: ENV.DEFAULT, keywords: ['computation design data vector raster color'], subLinks: [
         { id: 'Vector-and-Operation', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../links/External-Data-Vector-operation').then(({ Solution }) => { return new Solution(param.view as HTMLDivElement) }); } },
         { id: 'Geometry', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../links/External-Data-Geometry').then(({ Solution }) => { return new Solution(param.view as HTMLDivElement) }); } },
         { id: 'Raster', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../links/External-Data-Raster').then(({ Solution }) => { return new Solution(param.view as HTMLDivElement) }); } },
@@ -47,7 +47,7 @@ const Geometry: LinkInfo = {
     ]
 };
 const GeometryImplementation: LinkInfo = {
-    id: 'Geometry-Implementation', env: ENV.DEFAULT, keywords: [], subLinks: [
+    id: 'Geometry-Implementation', env: ENV.DEFAULT, keywords: ['geometry computation design data'], subLinks: [
         { id: 'Geometry-(Python)', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../links/Link-Geometry-Python-Code').then(({ Solution }) => { return new Solution(param.view as HTMLDivElement) }); } },
         'divider',
         { id: 'Canvas-Point-Circle', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../../PART_04_Geometry_Data/LAB_Web_01_Point_Circle').then(({ Solution }) => { return new Solution(param.view as HTMLDivElement) }); } },
@@ -66,12 +66,12 @@ const GeometryImplementation: LinkInfo = {
 };
 // ......................................... 3
 const Model: LinkInfo = {
-    id: 'AI-for-Design', env: ENV.DEFAULT, keywords: [], subLinks: [
+    id: 'AI-for-Design', env: ENV.DEFAULT, keywords: ['air for design designers'], subLinks: [
         { id: 'AI-for-Design', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../links/External-ai-for-designers').then(({ Solution }) => { return new Solution(param.view as HTMLDivElement) }); } },
     ]
 };
 const ModelImplementation: LinkInfo = {
-    id: 'ML-Models', env: ENV.DEFAULT, keywords: [], subLinks: [
+    id: 'ML-Models', env: ENV.DEFAULT, keywords: ['python tensorflow js tfjs ai ml dl cnn regression knn'], subLinks: [
         { id: 'ML-Python-code', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../links/Link-ML-Python-Code').then(({ Solution }) => { return new Solution(param.view as HTMLElement) }); } },
         'divider',
         { id: 'TFJS-Tensor', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../../PART_06_Problem_Data_Model_Train_Validation/LAB_Web_01_Tensor').then(({ Solution }) => { return new Solution(param.containerID) }); } },
@@ -91,7 +91,7 @@ const ModelImplementation: LinkInfo = {
 };
 // ......................................... 4
 const ThirdPlaceResearch: LinkInfo = {
-    id: 'Third-Place-Research', env: ENV.DEFAULT, keywords: [], subLinks: [
+    id: 'Third-Place-Research', env: ENV.DEFAULT, keywords: ['project research paper third place data visualization'], subLinks: [
         { id: 'Third-Place-initial-research', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../links/External-Third-Place-initial-research').then(({ Solution }) => { return new Solution(param.view as HTMLElement) }); } },
         { id: 'Third-Place-paper', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../links/Link-Third-Place-paper').then(({ Solution }) => { return new Solution(param.view as HTMLElement) }); } },
         'divider',
@@ -102,16 +102,14 @@ const ThirdPlaceResearch: LinkInfo = {
     ]
 };
 const ThirdPlaceResearchViz: LinkInfo = {
-    id: 'Third-Place-Viz', env: ENV.DEFAULT, keywords: [], subLinks: [
+    id: 'Third-Place-Viz', env: ENV.DEFAULT, keywords: ['project research third place data visualization'], subLinks: [
         { id: 'Third-place-init', env: ENV.JSAPI, keywords: [], load: (param) => { return import('../../PART_08_Third_Place_Prediction_Implementation/Project_01_Third_Place').then(({ Solution }) => { return new Solution(param.view) }); } },
         { id: 'Third-place-Result', env: ENV.JSAPI, keywords: [], load: (param) => { return import('../../PART_08_Third_Place_Prediction_Implementation/Project_02_Third_Place_Results').then(({ Solution }) => { return new Solution(param.view) }); } },
-        { id: 'Third-place-Result-Interpolation', env: ENV.JSAPI, keywords: [], load: (param) => { return import('../../PART_08_Third_Place_Prediction_Implementation/Project_03_Third_Place_Results_Interpolation').then(({ Solution }) => { return new Solution(param.view) }); } },
-        'divider',
     ]
 };
 // ......................................... 5
 const Typescript_Lab: LinkInfo = {
-    id: 'Typescript-Lab', env: ENV.DEFAULT, keywords: [], subLinks: [
+    id: 'Typescript-Lab', env: ENV.DEFAULT, keywords: ['programming typescript computation thinking code'], subLinks: [
         { id: 'Typescript-syntax', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../../PART_09_Visualization_Typescript/01_Typescript_Basics').then(({ Solution }) => { return new Solution(param.containerID) }); } },
         { id: 'Condition-Loop', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../../PART_09_Visualization_Typescript/02_Condition_Loop').then(({ Solution }) => { return new Solution(param.containerID) }); } },
         { id: 'Data-Structure-and-Format', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../../PART_09_Visualization_Typescript/03_Data_Structure').then(({ Solution }) => { return new Solution(param.containerID) }); } },
@@ -124,6 +122,8 @@ const Typescript_Lab: LinkInfo = {
 };
 const DigitalMappingVizLab: LinkInfo = {
     id: 'Digital-Mapping-Lab', env: ENV.DEFAULT, keywords: ['tf', 'tensor', 'flow', 'js',], subLinks: [
+        { id: 'Mapping-and-Visualization', env: ENV.THREE, keywords: [], load: (param) => { return import('../links/External-Mapping').then(({ Solution }) => { return new Solution(param.view as HTMLDivElement); }); } },
+        'divider',
         { id: 'template', env: ENV.JSAPI, keywords: [], load: (param) => { return import('../../PART_10_Web_Visualization_Digital_Mapping_Analysis/01_Template').then(({ Solution }) => { return new Solution(param.view) }); } },
         { id: 'starter', env: ENV.JSAPI, keywords: [], load: (param) => { return import('../../PART_10_Web_Visualization_Digital_Mapping_Analysis/02_Starter').then(({ Solution }) => { return new Solution(param.view) }); } },
         'divider',
@@ -132,15 +132,23 @@ const DigitalMappingVizLab: LinkInfo = {
         { id: 'JSON-Line', env: ENV.JSAPI, keywords: [], load: (param) => { return import('../../PART_10_Web_Visualization_Digital_Mapping_Analysis/04_JSON/MultiLineString').then(({ Solution }) => { return new Solution(param.view) }); } },
         { id: 'REST-API', env: ENV.JSAPI, keywords: [], load: (param) => { return import('../../PART_10_Web_Visualization_Digital_Mapping_Analysis/05_REST_API').then(({ Solution }) => { return new Solution(param.view) }); } },
         'divider',
-        { id: 'Polygon', env: ENV.JSAPI, keywords: [], load: (param) => { return import('../../PART_10_Web_Visualization_Digital_Mapping_Analysis/14_Polygon').then(({ Solution }) => { return new Solution(param.view) }); } },
-        { id: 'Polygon-Interaction', env: ENV.JSAPI, keywords: [], load: (param) => { return import('../../PART_10_Web_Visualization_Digital_Mapping_Analysis/14_Polygon/MouserInteraction').then(({ Solution }) => { return new Solution(param.view) }); } },
+        { id: 'Polygon', env: ENV.JSAPI, keywords: [], load: (param) => { return import('../../PART_10_Web_Visualization_Digital_Mapping_Analysis/06_Polygon').then(({ Solution }) => { return new Solution(param.view) }); } },
+        { id: 'Polygon-Interaction', env: ENV.JSAPI, keywords: [], load: (param) => { return import('../../PART_10_Web_Visualization_Digital_Mapping_Analysis/06_Polygon/MouserInteraction').then(({ Solution }) => { return new Solution(param.view) }); } },
         'divider',
-
+        { id: 'Dynamic-Bins', env: ENV.JSAPI, keywords: [], load: (param) => { return import('../../PART_10_Web_Visualization_Digital_Mapping_Analysis/DynamicBins').then(({ Solution }) => { return new Solution(param.view) }); } },
+        { id: 'Graph-based-Clustering', env: ENV.THREE, keywords: [], load: (param) => { return import('../links/External-Graph-Based-Clustering').then(({ Solution }) => { return new Solution(param.view as HTMLDivElement); }); } },
+         'divider',  
+        { id: 'Discrete-Urban-Space-and-Connectivity', env: ENV.THREE, keywords: [], load: (param) => { return import('../links/External-network').then(({ Solution }) => { return new Solution(param.view as HTMLDivElement); }); } },
+        { id: 'NNA-Example', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../links/External-NNA').then(({ Solution }) => { return new Solution(param.view as HTMLDivElement) }); } },
+        { id: 'Network-Preparation', env: ENV.JSAPI, keywords: [], load: (param) => { return import('../../PART_10_Web_Visualization_Digital_Mapping_Analysis/UrbanNetwork/01_Interaction').then(({ Solution }) => { return new Solution(param.view) }); } },
+        { id: 'Network-Search(BFS)', env: ENV.JSAPI, keywords: [], load: (param) => { return import('../../PART_10_Web_Visualization_Digital_Mapping_Analysis/UrbanNetwork/02_Network').then(({ Solution }) => { return new Solution(param.view) }); } },
+        { id: 'A-Start-Graph', env: ENV.JSAPI, keywords: [], load: (param) => { return import('../../PART_10_Web_Visualization_Digital_Mapping_Analysis/UrbanNetwork/03_NetworkAStart').then(({ Solution }) => { return new Solution(param.view) }); } },
+        { id: 'A-Start-Grid', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../links/External-A-Star-Grid').then(({ Solution }) => { return new Solution(param.view as HTMLDivElement); }); } },
 
     ]
 };
 const ThreeVisualization: LinkInfo = {
-    id: '3D-Viz-for-GIS', env: ENV.DEFAULT, keywords: [], subLinks: [
+    id: '3D-Viz-for-GIS', env: ENV.DEFAULT, keywords: ['3d visualization gis, point, line, polyline, polygon, mesh'], subLinks: [
         { id: 'Three-Starter', env: ENV.THREE, keywords: [], load: (param) => { return import('../../PART_11_Web_Visualization_3D_for_GIS/LAB_Web_01_Starter-Three').then(({ Solution }) => { return new Solution(param.containerID) }); } },
         'divider',
         { id: 'Three-Primitive', env: ENV.THREE, keywords: [], load: (param) => { return import('../../PART_11_Web_Visualization_3D_for_GIS/LAB_Web_02_PrimitiveGeometry').then(({ Solution }) => { return new Solution(param.containerID) }); } },
@@ -155,7 +163,6 @@ const ThreeVisualization: LinkInfo = {
         { id: 'Three-Mesh-Rhino-Geo', env: ENV.THREE, keywords: [], load: (param) => { return import('../../PART_11_Web_Visualization_3D_for_GIS/LAB_Web_11_MeshRhinoGeo').then(({ Solution }) => { return new Solution(param.containerID); }); } },
         { id: 'Three-bunny', env: ENV.THREE, keywords: [], load: (param) => { return import('../../PART_11_Web_Visualization_3D_for_GIS/LAB_Web_12_Bunny').then(({ Solution }) => { return new Solution(param.containerID); }); } },
         { id: 'Three-Voxel', env: ENV.THREE, keywords: [], load: (param) => { return import('../../PART_11_Web_Visualization_3D_for_GIS/LAB_Web_13_Voxel').then(({ Solution }) => { return new Solution(param.containerID); }); } },
-
         'divider',
         { id: '[Link]-Code-Pen', env: ENV.THREE, keywords: [], load: (param) => { return import('../links/Link-codepen-three').then(({ Solution }) => { return new Solution(param.view as HTMLDivElement); }); } },
         'divider',
@@ -168,7 +175,7 @@ const ThreeVisualization: LinkInfo = {
         { id: 'Slow-zone-Viz-3D', env: ENV.THREE, keywords: [], load: (param) => { return import('../links/External-Slow-zone-project-3d').then(({ Solution }) => { return new Solution(param.view as HTMLDivElement); }); } },
         { id: 'Slow-zone-Viz-2D', env: ENV.THREE, keywords: [], load: (param) => { return import('../links/External-Slow-zone-project-2d').then(({ Solution }) => { return new Solution(param.view as HTMLDivElement); }); } },
     ]
-}
+};
 export const LAB_LINKS: LinkInfo[] = [
     DesignData,
     ProgrammingDataProcess,
@@ -187,7 +194,6 @@ export const LAB_LINKS: LinkInfo[] = [
     ThreeVisualization,
     'divider',        
     { id: 'Reference', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../links/External-Reference').then(({ Solution }) => { return new Solution(param.view as HTMLDivElement); }); } },
-
 ];
 const generateLookupTable = () => {
     const lookupTable = {}

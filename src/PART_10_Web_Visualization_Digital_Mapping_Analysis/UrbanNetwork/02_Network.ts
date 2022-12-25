@@ -33,7 +33,7 @@ export class Solution extends RendererJSAPI {
         this.network = new Network();
 
         this.ptStart = new InteractivePoint(315, 90);
-        this.ptEnd = new InteractivePoint(1268, 1120);
+        this.ptEnd = new InteractivePoint(900, 800);
 
         // !! you should execute it for rendering
         this.start();

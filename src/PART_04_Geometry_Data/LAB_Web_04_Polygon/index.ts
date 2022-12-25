@@ -2,7 +2,7 @@ import { RendererCanvas } from '../../lib';
 
 export class Solution extends RendererCanvas {
 
-    constructor(div: HTMLElement) {
+    constructor(div: HTMLDivElement) {
         super(div);
 
         this.canvas.style.background = '#fff';

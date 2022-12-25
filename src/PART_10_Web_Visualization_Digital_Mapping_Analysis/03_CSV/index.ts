@@ -8,6 +8,7 @@ export class Solution extends RendererJSAPI {
         // TODO
         // You code goes here for one time operation
 
+        // https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html
         (this.mView.map.basemap as any) = 'streets';
 
         // https://data.boston.gov/dataset/blue-bike-stations

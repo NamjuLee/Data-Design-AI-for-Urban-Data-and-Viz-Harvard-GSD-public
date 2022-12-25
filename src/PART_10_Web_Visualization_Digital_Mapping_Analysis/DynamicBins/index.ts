@@ -2,53 +2,80 @@ import { RendererJSAPI } from '../../lib'
 import { getCSVFromURL, Vector3, isInsideOfVecs } from 'njscore';
 
 export class Solution extends RendererJSAPI {
-    pts: number[][] = [];
+    pts: Vector3[] = [];
 
     captureVec: Vector3
 
     pixelMap: CustomDynamicBinSystem;
+
+    divText: HTMLDivElement;
 
     constructor(view: any) {
         super(view);
         // TODO
         // You code goes here for one time operation
 
-        this.mView.on("drag", (event) => {
-            event.stopPropagation();
-        });
-        this.mView.navigation.mouseWheelZoomEnabled = false;
+        this.center(-71.08759760905814, 42.326218799267316);
+        this.zoom(12);
+
+        // https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#navigation
+        this.mView.navigation = {
+            gamepad: {
+                enabled: false
+            },
+            mouseWheelZoomEnabled: false
+        }
+        this.disablePan = true;
+
+        // append UI
+        const div = document.createElement('div');
+        div.style.position = 'absolute';
+        div.style.margin = '20px';
+        this.hostDiv.appendChild(div);
+
+        let slider = getSlider('Type', '0', '5');
+        slider.slider.defaultValue = '0';
+        // slider.div.style.position = 'absolute';
+        slider.div.style.marginTop = '25px';
+        slider.text.textContent = 'Type';
+        div.appendChild(slider.div);
+        slider.slider.oninput = () => {
+            this.pixelMap.mode = +slider.slider.value;
+            this.pixelMap.Init();
+            this.pixelMap.UpdateData(this.pts);
+        }
+
+        this.divText = document.createElement('div');
+        this.divText.style.color = '#0ff';
+        this.divText.style.marginTop = '22px';
+        this.divText.style.fontSize = '18px';
+        this.divText.textContent = 'Num of data:';
+        div.appendChild(this.divText);
+        // end append UI
 
         // https://data.boston.gov/dataset/blue-bike-stations
         getCSVFromURL(process.env.PUBLIC_URL + '/static/data/Primary_Street_Trees_Public.csv').then((d) => {
-            let count = 0;
-            let latSum = 0;
-            let lonSum = 0;
             const line = d.split(/\r\n|\r|\n/g);
             for (let i = 1; i < line.length; ++i) {
                 const values = line[i].split(',');
                 const lon = +values[13];
                 const lat = +values[14];
-                if ((!isNaN(lon) && !isNaN(lat) && ((lon !== 0)&& (lat !== 0)))) {
-                    console.log(lon, lat);
-                    
-                    this.pts.push([lon, lat]);
-                    count++;
-                    latSum += lat;
-                    lonSum += lon;
+                if ((!isNaN(lon) && !isNaN(lat) && ((lon !== 0) && (lat !== 0)))) {
+                    const projected = this.toScreen(lon, lat);
+                    this.pts.push(new Vector3(projected[0], projected[1], 0));
+                }
+                if (i > 1000) {
+                    break;
                 }
             }
-            // console.log(count)
-            this.center(lonSum / count, latSum / count);
-            this.zoom(12);
-
-
 
             this.pixelMap = new CustomDynamicBinSystem(
-                new Vector3(100, 100, 0),
-                new Vector3(500, 500, 0),
+                new Vector3(200, 200, 0),
+                new Vector3(900, 900, 0),
             );
-            this.pixelMap.mode = 2;
+            this.pixelMap.mode = 0;
             this.pixelMap.Init();
+            this.pixelMap.UpdateData(this.pts);
 
             this.start();
         });
@@ -59,20 +86,15 @@ export class Solution extends RendererJSAPI {
         // You code goes here for the rending loop
 
         ctx.globalCompositeOperation = 'color-dodge';
-
-        for (let i = 0; i < this.pts.length; ++i) { 
-            // const projected = this.toScreen(this.pts[i][0], this.pts[i][1]); 
-            // renderPoint(ctx, projected[0], projected[1], this.time + 3, 'rgba(10, 255, 10, 0.2)' );
-        }
+        this.pts.forEach((p) => {
+            renderPoint(ctx, p.x, p.y, this.time + 3, 'rgba(10, 255, 10, 0.2)');
+        });
 
         this.pixelMap.RenderPixel(ctx);
         this.pixelMap.RenderCorner(ctx);
+
+        ctx.globalCompositeOperation = 'source-over';
         this.pixelMap.RenderSelPixel(ctx);
-
-
-        // this.pixelMap.RenderPixel(ctx);
-        // this.pixelMap.RenderCorner(ctx);
-        // this.pixelMap.RenderSelPixel(ctx);
 
         // !! can stop render after this frame.
         // this.isStatic = true;
@@ -81,16 +103,23 @@ export class Solution extends RendererJSAPI {
         this.captureVec = this.pixelMap.IsHover(x, y);
     }
     public mouseMove(x: number, y: number): void {
-        this.pixelMap.MoveInspection(x, y);
-        if (this.pixelMap.selPixel) {
-            // const d = (this.pixelMap.selPixel.data['num'] as number).toFixed(4);
-            // const text = 'data: ' + d;
-            // console.log(text);
-            return;
+
+        if (this.pixelMap) {
+            this.pixelMap.MoveInspection(x, y);
+            if (this.pixelMap.selPixel) {
+                const d = this.pixelMap.selPixel.vec.z
+                const text = 'Num of data: ' + d + ', index:' + this.pixelMap.selPixel.i + ',' + this.pixelMap.selPixel.j;
+                this.divText.textContent = text;
+                return;
+            }
         }
+
+    }
+    public mouseDrag(x: number, y: number): void {
+
         if (this.captureVec) {
             this.pixelMap.DragControlPoint(x, y);
-
+            this.pixelMap.UpdateData(this.pts);
         }
     }
     public mouseUp(x: number, y: number): void {
@@ -98,17 +127,12 @@ export class Solution extends RendererJSAPI {
     }
 }
 const renderPoint = (ctx: CanvasRenderingContext2D, x: number, y: number, t: number, color: string) => {
-    
     ctx.fillStyle = color;
     ctx.beginPath();
-    ctx.arc(x, y, (Math.sin(t * 0.8) + 6) * 3, 0, Math.PI * 2);
+    ctx.arc(x, y, (Math.sin(t * 0.8) + 6) * 2, 0, Math.PI * 2);
     ctx.closePath();
     ctx.fill();
 };
-
-
-
-
 
 
 
@@ -199,7 +223,6 @@ export class CustomDynamicBinSystem {
         this.listPixels = [];
 
         this.InitGrid();
-        // this.ComputeAtt();
 
         switch (this.mode) {
             case 0: this.ComputeRec(); break;
@@ -219,7 +242,8 @@ export class CustomDynamicBinSystem {
             const p = vs[i];
             for (let j = 0; j < this.listPixels.length; ++j) {
                 if (isInsideOfVecs(p, this.listPixels[j].recVec)) {
-                    this.listPixels[j].data['num'] += p.z;
+                    // console.log('ddd');
+                    this.listPixels[j].vec.z += 1
                 }
             }
         }
@@ -243,7 +267,7 @@ export class CustomDynamicBinSystem {
         for (let j = 0; j < this.ry; j += 1) {
             for (let i = 0; i < this.rx; i += 1) {
                 if (i < this.rx - 1 && j < this.ry - 1) {
-                    let p = new Pixel(this);
+                    let p = new Pixel(this, i, j);
                     p.recVec.push(this.pts[j][i]);
                     p.recVec.push(this.pts[j][i + 1]);
                     p.recVec.push(this.pts[j + 1][i + 1]);
@@ -258,13 +282,13 @@ export class CustomDynamicBinSystem {
         for (let j = 0; j < this.ry; j += 1) {
             for (let i = 0; i < this.rx; i += 1) {
                 if (i < this.rx - 1 && j < this.ry - 1) {
-                    let p = new Pixel(this);
+                    let p = new Pixel(this, i, j);
                     p.recVec.push(this.pts[j][i]);
                     p.recVec.push(this.pts[j][i + 1]);
                     p.recVec.push(this.pts[j + 1][i]);
                     this.listPixels.push(p);
 
-                    p = new Pixel(this);
+                    p = new Pixel(this, i, j);
                     p.recVec.push(this.pts[j][i + 1]);
                     p.recVec.push(this.pts[j + 1][i + 1]);
                     p.recVec.push(this.pts[j + 1][i]);
@@ -278,7 +302,7 @@ export class CustomDynamicBinSystem {
         for (let j = 0; j < this.ry; j += 1) {
             for (let i = 0; i < this.rx; i += 1) {
                 if (i < this.rx - 2 && j < this.ry - 1) {
-                    let p = new Pixel(this);
+                    let p = new Pixel(this, i, j);
                     p.recVec.push(this.pts[j][i]);
                     p.recVec.push(this.pts[j][i + 1]);
                     p.recVec.push(this.pts[j + 1][i + 2]);
@@ -294,7 +318,7 @@ export class CustomDynamicBinSystem {
         for (let j = 0; j < this.ry; j += 3) {
             for (let i = 0; i < this.rx; i += 2) {
                 if (i < this.rx - 2 && j < this.ry - 2) {
-                    let p = new Pixel(this);
+                    let p = new Pixel(this, i, j);
                     p.recVec.push(this.pts[j][i]);
                     p.recVec.push(this.pts[j][i + 2]);
                     p.recVec.push(this.pts[j + 1][i + 2]);
@@ -303,7 +327,7 @@ export class CustomDynamicBinSystem {
                     p.recVec.push(this.pts[j + 2][i]);
                     this.listPixels.push(p);
 
-                    p = new Pixel(this);
+                    p = new Pixel(this, i, j);
                     p.recVec.push(this.pts[j + 2][i]);
                     p.recVec.push(this.pts[j + 3][i]);
                     p.recVec.push(this.pts[j + 3][i + 2]);
@@ -324,13 +348,13 @@ export class CustomDynamicBinSystem {
         for (let j = 0; j < this.ry; j += 1) {
             for (let i = 0; i < this.rx; i += 1) {
                 if (i < this.rx - 1 && j < this.ry - 1) {
-                    let p = new Pixel(this);
+                    let p = new Pixel(this, i, j);
                     p.recVec.push(this.pts[j][i]);
                     p.recVec.push(this.pts[j][i + 1]);
                     p.recVec.push(this.pts[j + 1][i + 1]);
                     this.listPixels.push(p);
 
-                    p = new Pixel(this);
+                    p = new Pixel(this, i, j);
                     p.recVec.push(this.pts[j][i]);
                     p.recVec.push(this.pts[j + 1][i + 1]);
                     p.recVec.push(this.pts[j + 1][i]);
@@ -346,7 +370,7 @@ export class CustomDynamicBinSystem {
             for (let i = 0; i < this.rx; i += 2) {
                 if (alter) {
                     if (i % 2 === 0 && i < this.rx - 2 && j % 2 === 0 && j < this.ry - 2) {
-                        let p = new Pixel(this);
+                        let p = new Pixel(this, i, j);
                         p.recVec.push(this.pts[j][i + 1]);
                         p.recVec.push(this.pts[j + 1][i + 2]);
                         p.recVec.push(this.pts[j + 2][i + 2]);
@@ -358,7 +382,7 @@ export class CustomDynamicBinSystem {
                     }
                 } else {
                     if (i % 2 === 0 && i < this.rx - 2 && j % 2 === 0 && j < this.ry - 2) {
-                        let p = new Pixel(this);
+                        let p = new Pixel(this, i, j);
                         p.recVec.push(this.pts[j][i + 2]);
                         p.recVec.push(this.pts[j + 1][i + 3]);
                         p.recVec.push(this.pts[j + 2][i + 3]);
@@ -382,16 +406,16 @@ export class CustomDynamicBinSystem {
     }
     RenderCorner(ctx: CanvasRenderingContext2D) {
         let p = this.pts[0][0];
-        CanvasDrawing.PointByNVecAni(ctx, p, 7, this.t, 'rgba(255, 0, 0, 1)');
+        CanvasDrawing.PointByNVecAni(ctx, p, 7, this.t, 'rgba(0, 0, 0, 1)');
         ctx.stroke();
         p = this.pts[0][this.pts[0].length - 1];
-        CanvasDrawing.PointByNVecAni(ctx, p, 7, this.t, 'rgba(255, 0, 0, 1)');
+        CanvasDrawing.PointByNVecAni(ctx, p, 7, this.t, 'rgba(0, 0, 0, 1)');
         ctx.stroke();
         p = this.pts[this.pts.length - 1][this.pts[0].length - 1];
-        CanvasDrawing.PointByNVecAni(ctx, p, 7, this.t, 'rgba(255, 0, 0, 1)');
+        CanvasDrawing.PointByNVecAni(ctx, p, 7, this.t, 'rgba(0, 0, 0, 1)');
         ctx.stroke();
         p = this.pts[this.pts.length - 1][0];
-        CanvasDrawing.PointByNVecAni(ctx, p, 7, this.t, 'rgba(255, 0, 0, 1)');
+        CanvasDrawing.PointByNVecAni(ctx, p, 7, this.t, 'rgba(0, 0, 0, 1)');
         ctx.stroke();
         this.t += 0.07;
     }
@@ -432,13 +456,13 @@ export class Pixel {
 
     static GetID() { return Pixel.ID++; }
 
-    constructor(map: CustomDynamicBinSystem, v: Vector3 = new Vector3(0, 0, 0)) {
+    constructor(map: CustomDynamicBinSystem, i: number, j: number, v: Vector3 = new Vector3(0, 0, 0)) {
         this.map = map;
         this.vec = v;
         this.nPix = [];
         this.recVec = [];
-        this.i = -1;
-        this.j = -1;
+        this.i = i;
+        this.j = j;
         this.k = -1;
         this.id = Pixel.GetID();
         this.data = {};
@@ -452,22 +476,21 @@ export class Pixel {
         /* */
     }
     Render(ctx: CanvasRenderingContext2D) {
+        // console.log(this.data['num'])
         ctx.lineWidth = 1;
-        ctx.strokeStyle = '#000000';
-        ctx.fillStyle = `rgba(255, 0, 255, ${this.data['num'] * 0.05} )`;
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.3)';
+        ctx.fillStyle = `rgba(0, 255, 255, ${this.vec.z * 0.05} )`;
+        // ctx.fillStyle = `rgba(${this.vec.z}, 0, 0, ${this.vec.z * 0.05} )`;
         ctx.beginPath();
         ctx.moveTo(this.recVec[0].x, this.recVec[0].y);
         for (let i = 1; i < this.recVec.length; ++i) {
             ctx.lineTo(this.recVec[i].x, this.recVec[i].y);
         }
         ctx.closePath();
-        ctx.fill();
         ctx.stroke();
-        // }
-
+        ctx.fill();
     }
 }
-
 
 export class CanvasDrawing {
     public static LineByVecs(ctx: CanvasRenderingContext2D, v0: Vector3, v1: Vector3, width: number = 1, fill: string = '#ff0000') {
@@ -555,8 +578,24 @@ export class CanvasDrawing {
         }
 
     }
-
-    constructor() {
-        //
-    }
 }
+const getSlider = (title: string, min: string = '0.0', max: string = '100') => {
+    // <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+    const div = document.createElement('div');
+    div.style.display = 'flex';
+
+    const slider = document.createElement('input');
+    slider.type = 'range';
+    slider.min = min;
+    slider.max = max;
+
+    const text = document.createElement('div');
+    text.textContent = title;
+    text.style.color = '#aaa';
+    div.appendChild(slider);
+    div.appendChild(text);
+
+    return {
+        div, slider, text
+    }
+};

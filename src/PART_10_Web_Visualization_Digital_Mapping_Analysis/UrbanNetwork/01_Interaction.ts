@@ -29,7 +29,7 @@ export class Solution extends RendererJSAPI {
 
 
         this.ptStart = new InteractivePoint(315, 90);
-        this.ptEnd = new InteractivePoint(1268, 1120);
+        this.ptEnd = new InteractivePoint(800, 800);
 
         // !! you should execute it for rendering
         this.start();
@@ -123,10 +123,10 @@ export class InteractivePoint {
         ctx.beginPath();
         ctx.arc(this.x, this.y, Math.sin(t) + this.r, 0, Math.PI * 2);
         ctx.closePath();
-        ctx.fillStyle = '#00f'
+        ctx.fillStyle = '#00f';
         ctx.fill();
 
-        ctx.strokeStyle = '#fff'
+        ctx.strokeStyle = '#fff';
         ctx.stroke();
     }
     public inInside(x: number, y: number) {
@@ -146,7 +146,7 @@ export class Line {
         this.p0 = p0;
         this.p1 = p1;
     }
-    render(ctx: CanvasRenderingContext2D, t: number) {
+    public render(ctx: CanvasRenderingContext2D, t: number) {
         ctx.beginPath();
         ctx.moveTo(this.p0.x, this.p0.y);
         ctx.lineTo(this.p1.x, this.p1.y);
@@ -159,21 +159,21 @@ export class Line {
     }
 }
 export class Point {
-    x: number;
-    y: number;
-    z: number = 0;
-    r: number = 6;
+    public x: number;
+    public y: number;
+    public z: number = 0;
+    public r: number = 6;
     constructor(x: number, y: number)  {
         this.x = x;
         this.y = y;
     }
-    render(ctx: CanvasRenderingContext2D, t: number) {
+    public render(ctx: CanvasRenderingContext2D, t: number) {
         ctx.beginPath();
         ctx.arc(this.x, this.y, Math.sin(t) + this.r, 0, Math.PI * 2);
         ctx.closePath();
-        ctx.fillStyle = '#0f0'
+        ctx.fillStyle = '#0f0';
         ctx.fill();
-        ctx.strokeStyle = '#fff'
+        ctx.strokeStyle = '#fff';
         ctx.stroke();
     }
 }
