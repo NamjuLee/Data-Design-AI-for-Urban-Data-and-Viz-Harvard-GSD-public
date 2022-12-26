@@ -35,6 +35,10 @@ const ProgrammingDataProcess: LinkInfo = {
         { id: 'Code-For-Design-and-Programming', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../links/External-Code-For-Design').then(({ Solution }) => { return new Solution(param.view as HTMLElement) }); } },
         { id: 'Computational-Design-Thinking', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../links/External-Computational-Design-Thinking').then(({ Solution }) => { return new Solution(param.view as HTMLElement) }); } },
         { id: 'Python-Code-(GitHub)', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../links/Link-Programming-Data-Processing').then(({ Solution }) => { return new Solution(param.view as HTMLElement) }); } },
+        'divider',
+        { id: '[Cheat Sheet] Python, List, Data Types, Class, Pandas, Numpy, SKlearn', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../links/External-Cheat-Sheet-A').then(({ Solution }) => { return new Solution(param.view as HTMLElement) }); } },
+        { id: '[Cheat Sheet] Machine Learning, Deep Learning, Artificial Intelligence, Keras, Neural Networks, Skicit-learn, Pandas Data Science', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../links/External-Cheat-Sheet-B').then(({ Solution }) => { return new Solution(param.view as HTMLElement) }); } },
+  
     ]
 };
 // ......................................... 2
