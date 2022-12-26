@@ -1,0 +1,1024 @@
+[
+    {
+        "area": "boston",
+        "location": [
+            -71.105682,
+            42.333722
+        ]
+    },
+    {
+        "area": "brookline",
+        "location": [
+            -71.149072,
+            42.334912
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.032,
+            42.345182
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.060327,
+            42.279712
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.022476,
+            42.379759
+        ]
+    },
+    {
+        "area": "brookline",
+        "location": [
+            -71.116759,
+            42.343366
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.075724,
+            42.347314
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.070493,
+            42.361279
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.034448,
+            42.344579
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.057117,
+            42.342793
+        ]
+    },
+    {
+        "area": "quincy",
+        "location": [
+            -71.007034,
+            42.232848
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.047514,
+            42.352724
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.099787,
+            42.322893
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.124702,
+            42.351833
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.057421,
+            42.359065
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.034119,
+            42.343927
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.063229,
+            42.284219
+        ]
+    },
+    {
+        "area": "newton",
+        "location": [
+            -71.252327,
+            42.337394
+        ]
+    },
+    {
+        "area": "milton",
+        "location": [
+            -71.067612,
+            42.270093
+        ]
+    },
+    {
+        "area": "cambridge",
+        "location": [
+            -71.142449,
+            42.395261
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.039287,
+            42.347928
+        ]
+    },
+    {
+        "area": "jamaica-plain",
+        "location": [
+            -71.113377,
+            42.300023
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.111406,
+            42.32996
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.028456,
+            42.344681
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.100235,
+            42.349126
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.142593,
+            42.343886
+        ]
+    },
+    {
+        "area": "quincy",
+        "location": [
+            -71.029307,
+            42.274957
+        ]
+    },
+    {
+        "area": "brookline",
+        "location": [
+            -71.135387,
+            42.339258
+        ]
+    },
+    {
+        "area": "cambridge",
+        "location": [
+            -71.076593,
+            42.370774
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.07052,
+            42.372593
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.057922,
+            42.363222
+        ]
+    },
+    {
+        "area": "brighton",
+        "location": [
+            -71.166124,
+            42.339902
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.06955,
+            42.34136
+        ]
+    },
+    {
+        "area": "brookline",
+        "location": [
+            -71.129327,
+            42.339683
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.11068,
+            42.32868
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.062129,
+            42.361457
+        ]
+    },
+    {
+        "area": "brookline",
+        "location": [
+            -71.141549,
+            42.337847
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.081205,
+            42.332709
+        ]
+    },
+    {
+        "area": "charlestown",
+        "location": [
+            -71.077056,
+            42.383434
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.053175,
+            42.311099
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.018148,
+            42.367461
+        ]
+    },
+    {
+        "area": "brookline",
+        "location": [
+            -71.113885,
+            42.344125
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.090437,
+            42.335742
+        ]
+    },
+    {
+        "area": "brookline",
+        "location": [
+            -71.118129,
+            42.332002
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.078958,
+            42.334958
+        ]
+    },
+    {
+        "area": "braintree",
+        "location": [
+            -71.00085,
+            42.20855
+        ]
+    },
+    {
+        "area": "brookline",
+        "location": [
+            -71.138705,
+            42.338469
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.109678,
+            42.333106
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.152961,
+            42.338145
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.131197,
+            42.350118
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -70.990986,
+            42.413963
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.06461,
+            42.352337
+        ]
+    },
+    {
+        "area": "brookline",
+        "location": [
+            -71.111129,
+            42.34487
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.021494,
+            42.364422
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.060465,
+            42.355453
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.077232,
+            42.336378
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.057421,
+            42.359065
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.065912,
+            42.293712
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.038422,
+            42.368343
+        ]
+    },
+    {
+        "area": "malden",
+        "location": [
+            -71.070888,
+            42.437134
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.113833,
+            42.350759
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.092021,
+            42.267586
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.157622,
+            42.339455
+        ]
+    },
+    {
+        "area": "brookline",
+        "location": [
+            -71.127031,
+            42.331133
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.059195,
+            42.359868
+        ]
+    },
+    {
+        "area": "cambridge",
+        "location": [
+            -71.118917,
+            42.373936
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.146162,
+            42.341483
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.051807,
+            42.359634
+        ]
+    },
+    {
+        "area": "brookline",
+        "location": [
+            -71.125182,
+            42.340946
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.066041,
+            42.343845
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.100052,
+            42.335898
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.121547,
+            42.35169
+        ]
+    },
+    {
+        "area": "brookline",
+        "location": [
+            -71.131304,
+            42.339474
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.081401,
+            42.345503
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.064651,
+            42.346443
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.106804,
+            42.34989
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.029485,
+            42.374542
+        ]
+    },
+    {
+        "area": "malden",
+        "location": [
+            -71.074144,
+            42.426678
+        ]
+    },
+    {
+        "area": "somerville",
+        "location": [
+            -71.122527,
+            42.39662
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.052545,
+            42.321065
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.107125,
+            42.310359
+        ]
+    },
+    {
+        "area": "quincy",
+        "location": [
+            -71.019721,
+            42.265972
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.088717,
+            42.340307
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.077463,
+            42.349991
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.067666,
+            42.366664
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.018588,
+            42.361325
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.01882,
+            42.364441
+        ]
+    },
+    {
+        "area": "milton",
+        "location": [
+            -71.083025,
+            42.267772
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.04206,
+            42.349098
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.061251,
+            42.365551
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.083072,
+            42.341762
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.073783,
+            42.338754
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.070817,
+            42.351847
+        ]
+    },
+    {
+        "area": "quincy",
+        "location": [
+            -71.004798,
+            42.250879
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.103866,
+            42.349569
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.084529,
+            42.342919
+        ]
+    },
+    {
+        "area": "revere",
+        "location": [
+            -70.992363,
+            42.39745
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.062202,
+            42.356332
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.062453,
+            42.272253
+        ]
+    },
+    {
+        "area": "brookline",
+        "location": [
+            -71.140849,
+            42.335805
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.140224,
+            42.348366
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.088148,
+            42.347953
+        ]
+    },
+    {
+        "area": "brookline",
+        "location": [
+            -71.120888,
+            42.342226
+        ]
+    },
+    {
+        "area": "brookline",
+        "location": [
+            -71.107385,
+            42.345947
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.150459,
+            42.340839
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.056979,
+            42.329752
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.035215,
+            42.346621
+        ]
+    },
+    {
+        "area": "brookline",
+        "location": [
+            -71.145357,
+            42.337049
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.035882,
+            42.34769
+        ]
+    },
+    {
+        "area": "milton",
+        "location": [
+            -71.087436,
+            42.267622
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.112004,
+            42.331686
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.084266,
+            42.329379
+        ]
+    },
+    {
+        "area": "newton",
+        "location": [
+            -71.230712,
+            42.325981
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.118783,
+            42.351345
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.062759,
+            42.352529
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.134551,
+            42.348542
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.063877,
+            42.349504
+        ]
+    },
+    {
+        "area": "cambridge",
+        "location": [
+            -71.086058,
+            42.362427
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.095125,
+            42.337732
+        ]
+    },
+    {
+        "area": "cambridge",
+        "location": [
+            -71.119159,
+            42.388353
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.095128,
+            42.348783
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.075846,
+            42.337386
+        ]
+    },
+    {
+        "area": "malden",
+        "location": [
+            -71.076969,
+            42.405202
+        ]
+    },
+    {
+        "area": "revere",
+        "location": [
+            -70.99256,
+            42.408389
+        ]
+    },
+    {
+        "area": "newton",
+        "location": [
+            -71.217023,
+            42.318744
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -70.997678,
+            42.390232
+        ]
+    },
+    {
+        "area": "brookline",
+        "location": [
+            -71.110215,
+            42.341042
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.060465,
+            42.355453
+        ]
+    },
+    {
+        "area": "newton",
+        "location": [
+            -71.24434,
+            42.333336
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.061516,
+            42.299992
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.055428,
+            42.352573
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.104021,
+            42.317251
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.004941,
+            42.386769
+        ]
+    },
+    {
+        "area": "newton",
+        "location": [
+            -71.205966,
+            42.321539
+        ]
+    },
+    {
+        "area": "milton",
+        "location": [
+            -71.073249,
+            42.269965
+        ]
+    },
+    {
+        "area": "newton",
+        "location": [
+            -71.16529,
+            42.326601
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.020134,
+            42.369457
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.149406,
+            42.336197
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.137888,
+            42.348468
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.095555,
+            42.331388
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.02724,
+            42.344105
+        ]
+    },
+    {
+        "area": "cambridge",
+        "location": [
+            -71.103474,
+            42.365326
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.10437,
+            42.334268
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.104156,
+            42.345347
+        ]
+    },
+    {
+        "area": "newton",
+        "location": [
+            -71.194444,
+            42.328354
+        ]
+    },
+    {
+        "area": "boston",
+        "location": [
+            -71.031036,
+            42.344626
+        ]
+    }
+]

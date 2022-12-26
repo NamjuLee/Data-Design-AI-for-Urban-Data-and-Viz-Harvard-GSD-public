@@ -70,7 +70,10 @@ li {
 ::-webkit-scrollbar-thumb:hover {
  background: #00bdbd;
 }
-
+.text-center h1 {
+  padding-left: 50px;
+  padding-right: 50px;
+} 
 
 .fa {
  font-size: 48px;
