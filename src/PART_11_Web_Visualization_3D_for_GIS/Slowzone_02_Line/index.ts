@@ -2,7 +2,7 @@ import * as THREE from 'three';
 import { getJSONFromURL } from 'njscore';
 import { RendererThree, MercatorProjection, } from '../../lib';
 
-import { renderLines } from '../Slowzone_Polyline';
+import { renderLines } from '../Slowzone_03_Polyline';
 
 export class Solution extends RendererThree {
     streetOSM: any = [];

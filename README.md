@@ -234,6 +234,21 @@ LAB 02 - Visualization Vector and Raster
 
 LAB 03 - Visualization analysis methods and tools
 
+---------------------------------
+
+
+#### 11. 3D Visualization for GIS on Web
+
+![](https://raw.githubusercontent.com/NamjuLee/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/main/public/reference/img/3DVizForGIS.jpg)
+
+**WORKSHOP**
+
+LAB 01 - THREE JS Basic
+
+LAB 02 - Point, Line Polyline, Mesh (Rhino Grasshopper)
+
+LAB 03 - Slowzone project review
+
 
 ---
 
