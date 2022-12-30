@@ -239,11 +239,13 @@ LAB 03 - Visualization analysis methods and tools
 
 #### 11. 3D Visualization for GIS on Web
 
+We will learn how to visualize data: vector(Point, Line Polyline Polygon or Mesh) and raster(Image), as a form of geometries with colors on web environment.
+
 ![](https://raw.githubusercontent.com/NamjuLee/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/main/public/reference/img/3DVizForGIS.jpg)
 
 **WORKSHOP**
 
-LAB 01 - THREE JS Basic
+LAB 01 - THREE JS basic and the pipeline
 
 LAB 02 - Point, Line Polyline, Mesh (Rhino Grasshopper)
 
