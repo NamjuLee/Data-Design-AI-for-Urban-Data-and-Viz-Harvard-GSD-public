@@ -275,18 +275,36 @@ Computational Design Thinking for Designers: https://nj-namju.medium.com/computa
 
 ---
 
-##### Install dependencies
+#### Install React, Typescript, and Dependencies
 
 `yarn` or `npm run install`
 
-##### run app
+#### Run the app
 
 `yarn dev` or `npm run dev`
 
+---
+
+#### Install Conda(Python) and Libraries
+
+[Conda(Minicoda env)](https://docs.anaconda.com/anaconda/user-guide/tasks/tensorflow/)
+
+
+`conda create -n tf tensorflow` with CPU or `conda install -c anaconda tensorflow-gpu` for the GPU version
+
+`conda env list`
+`conda activate tf`
+`conda install -n tf ipykernel --update-deps --force-reinstall`
+`conda install pandas`
+`conda install opencv`
+`conda install matplotlib`
+`conda install scikit-learn`
+`conda install Pillow` or `conda install -c anaconda Pillow`
 
 ---
 
-**INSTRUCTOR:** 
+**INSTRUCTOR:**
+
 
 [NJ Namju Lee](https://namjulee.github.io/njslabs/nj-namju-lee) / nj.namju@gmail.com
 
