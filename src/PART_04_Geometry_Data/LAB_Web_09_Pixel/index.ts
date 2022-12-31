@@ -17,7 +17,6 @@ export class Solution {
         console.log('xInterval', xInterval, 'yInterval', yInterval)
 
         // 2D data array
-        const listPixelMap: Pixel[][][] = [];
         const yList: Pixel[][] = []
         for (let y = 0; y < yNum; ++y) {
             const theY = minVector[1] + y * yInterval;
@@ -29,9 +28,7 @@ export class Solution {
             }
             yList.push(xList);
         }
-        listPixelMap.push(yList);
-
-        console.log(listPixelMap)
+        console.log(yList)
     }
     public destroy() {
 
@@ -41,6 +38,8 @@ class Pixel {
     public x;
     public y;
     public z;
+    public color: any;
+    public data: any;
     constructor(x: number, y: number, z: number) {
         this.x = x;
         this.y = y;

@@ -14,7 +14,7 @@ export class Solution extends RendererCanvas {
         const ctx = this.ctx;
 
         ctx.beginPath();
-        ctx.arc(0, 0, 2, 0, 3.14 * 2)
+        ctx.arc(0, 0, 10, 0, 3.14 * 2)
         ctx.closePath();
 
         ctx.fillStyle = '#ff0000'
@@ -52,51 +52,27 @@ export class Solution extends RendererCanvas {
         // ......................................your code goes here
         /////////////////////////////////////////////////////////////
 
+        // (1)
+        const p0 = [10, 100];
+        const p1 = [100, 10];
 
-        // (1) .................... interactive drawing point and line
+        ctx.beginPath();
+        ctx.moveTo(p0[0], p0[1]);
+        ctx.lineTo(p1[0], p1[1]);
+        ctx.strokeStyle = '#ff0000';
+        ctx.lineWidth = 3;
+        ctx.stroke();
 
-        const listPoint2 = []
+        // (2)
+        // const pline = [ 50, 50, 50, 100, 100, 50, 100, 100 ]
 
-        this.divHost.addEventListener('click', (e: MouseEvent) => {
-            ctx.clearRect(-200, -200, 400, 400);
-            // console.log(`mouse x: ${e.offsetX}, y: ${e.offsetY}`);
-            // add a position to the list
-            listPoint2.push([e.offsetX, e.offsetY]);
-
-            // draw lines by the array
-            drawLine(listPoint2);
-
-            // loop for draw points by the array
-            for (let i = 0; i < listPoint2.length; ++i) {
-                drawPoint(listPoint2[i][0], listPoint2[i][1]);
-            }
-
-        });
-
-        // (2) .................... interactive drawing point and line
-        // const listPoint = []
-
-        // div.addEventListener('click', (e: MouseEvent) =>{
-        //   ctx.clearRect(-200, -200, 400, 400);
-        //   console.log(`mouse x: ${e.x}, y: ${e.y}` );
-
-        //   // if the length of the list is begger tahn 5, we remove the iteam in the first index.
-        //   if(listPoint.length > 5) {
-        //     listPoint.shift();
-        //   }
-
-        //   // add a position to the list
-        //   listPoint.push([e.x - 210, e.y - 210]);
-
-        //   // draw lines by the array
-        //   drawLine(listPoint);
-
-        //   // loop for draw points by the array
-        //   for(let i = 0; i < listPoint.length; ++i) {
-        //     drawPoint(listPoint[i][0], listPoint[i][1]);
-        //   }
-
-        // });
+        // (3) convert the python code and draw polyline 
+        // lns = []
+        // for y in range(10, 200, 10):
+        //     for x in range(10, 200, 10):
+        //         if (x + y) % 2 == 0:
+        //             lns.append([x, y] )
+        // renderLineSeg(lns)
 
 
     }

@@ -5,16 +5,13 @@ export class Solution extends RendererCanvas {
     constructor(div: HTMLDivElement) {
         super(div);
 
-        this.canvas.style.background = '#fff';
-        // this.ctx.translate(this.ctx.canvas.width * 0.5, this.ctx.canvas.height * 0.5);
-        // this.ctx.scale(2, 2);
         this.init();
     }
     public init() {
         const ctx = this.ctx;
 
         ctx.beginPath();
-        ctx.arc(0, 0, 2, 0, 3.14 * 2)
+        ctx.arc(this.ctx.canvas.width * 0.5, this.ctx.canvas.height * 0.5, 10, 0, 3.14 * 2)
         ctx.closePath();
 
         ctx.fillStyle = '#ff0000'
@@ -26,7 +23,7 @@ export class Solution extends RendererCanvas {
 
         console.log('workshop-canvas 03 Polyline Mouse Interaction');
 
-        const drawPoint = (x: number, y: number, color: string = '#121212', r: number = 5) => {
+        const drawPoint = (x: number, y: number, color: string = '#f9f9f9', r: number = 5) => {
             // https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/arc
             ctx.beginPath();
             ctx.arc(x, y, r, 0, 3.14 * 2)
@@ -78,7 +75,7 @@ export class Solution extends RendererCanvas {
         //   ctx.clearRect(-200, -200, 400, 400);
         //   console.log(`mouse x: ${e.x}, y: ${e.y}` );
 
-        //   // if the length of the list is begger tahn 5, we remove the iteam in the first index.
+        //   // if the length of the list is bigger than 5, we remove the item in the first index.
         //   if(listPoint.length > 5) {
         //     listPoint.shift();
         //   }

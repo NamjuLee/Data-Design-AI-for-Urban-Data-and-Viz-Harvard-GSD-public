@@ -37,18 +37,20 @@ export class Solution extends RendererCanvas {
 
 
         const drawPoint = (x: number, y: number, color: string = '#121212', r: number = 5) => {
+            if (r < 0.1) { r = 0.1; }
             // https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/arc
             ctx.beginPath();
-            ctx.arc(x, y, r, 0, 3.14 * 2)
+            ctx.arc(x, y, r, 0, Math.PI * 2)
             ctx.closePath()
             ctx.fillStyle = color;
             ctx.fill()
         }
 
         function drawPointSecond(x: number, y: number, color: string = '#121212', r: number = 5) {
+            if (r < 0.1) { r = 0.1; }
             // https://www.w3schools.com/js/js_functions.asp
             ctx.beginPath();
-            ctx.arc(x, y, r, 0, 3.14 * 2)
+            ctx.arc(x, y, r, 0, Math.PI * 2)
             ctx.closePath()
             ctx.fillStyle = color;
             ctx.fill()

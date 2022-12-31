@@ -11,13 +11,7 @@ export class Solution {
     console.log("Let's learn TF JS !!");
     console.log("==============================");
 
-    // const data  = await getData()
-
-    //   const model = createModel();
-    //   tfvis.show.modelSummary({name: 'Model Summary'}, model);
-
     execute();
-
     console.log('Playground done!');
   }
 };
@@ -81,9 +75,6 @@ const createModel = () => {
 
 
 const convertToTensor = async (data) => {
-  // Wrapping these calculations in a tidy will dispose any
-  // intermediate tensors.
-
   return tf.tidy(() => {
     // Step 1. Shuffle the data
     tf.util.shuffle(data);
@@ -142,9 +133,6 @@ const trainModel = async (model, inputs, labels) => {
 const testModel = (model, inputData, normalizationData) => {
   const { inputMax, inputMin, labelMin, labelMax } = normalizationData;
 
-  // Generate predictions for a uniform range of numbers between 0 and 1;
-  // We un-normalize the data by doing the inverse of the min-max scaling
-  // that we did earlier.
   const [xs, preds] = tf.tidy(() => {
 
     const xs = tf.linspace(0, 1, 100);
@@ -158,7 +146,6 @@ const testModel = (model, inputData, normalizationData) => {
     return [unNormXs.dataSync(), unNormPreds.dataSync()];
   });
 
-
   const predictedPoints = Array.from(xs).map((val, i) => {
     return { x: val, y: preds[i] }
   });
@@ -166,7 +153,6 @@ const testModel = (model, inputData, normalizationData) => {
   const originalPoints = inputData.map(d => ({
     x: d.horsepower, y: d.mpg,
   }));
-
 
   tfvis.render.scatterplot(
     { name: 'Model Predictions vs Original Data' },
