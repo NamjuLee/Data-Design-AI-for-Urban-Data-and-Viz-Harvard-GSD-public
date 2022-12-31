@@ -293,12 +293,19 @@ Computational Design Thinking for Designers: https://nj-namju.medium.com/computa
 `conda create -n tf tensorflow` with CPU or `conda install -c anaconda tensorflow-gpu` for the GPU version
 
 `conda env list`
+
 `conda activate tf`
+
 `conda install -n tf ipykernel --update-deps --force-reinstall`
+
 `conda install pandas`
+
 `conda install opencv`
+
 `conda install matplotlib`
+
 `conda install scikit-learn`
+
 `conda install Pillow` or `conda install -c anaconda Pillow`
 
 ---
