@@ -7,6 +7,10 @@
 .img:hover {
     filter: grayscale(0%);
 }
+.logo {
+    padding-top: 50px;
+    min-width: 280px;
+}
 .lecture-workshop-container-main-title{
     text-align: center;
 }

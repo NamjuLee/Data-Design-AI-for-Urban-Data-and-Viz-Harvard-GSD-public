@@ -15,6 +15,7 @@ const LectureWorkshop = () => {
             {/* <div className='data-design-container'> */}
             <div className='text-center'>
                 <h2 className='title-sub'>Latest activity: Data & Design & Computation & Code for design</h2>
+                <img className='logo' src={process.env.PUBLIC_URL + '/reference/img/gsd_logo1.png'}/>
                 <h1 className='title'>Data in Design & AI for Urban Data & Visualization</h1>
             </div>
             {/* </div> */}

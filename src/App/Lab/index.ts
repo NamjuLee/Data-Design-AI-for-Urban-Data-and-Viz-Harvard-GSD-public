@@ -9,12 +9,6 @@ export enum ENV {
     CANVAS = 'canvas',
     WEBGL2 = 'webgl2',
 };
-interface Params {
-    idContainer: string;
-    idApp: string;
-    env: ENV;
-    view?: MapView
-};
 export type LinkInfo = {
     id: string;
     env: ENV;
@@ -22,6 +16,12 @@ export type LinkInfo = {
     keywords?: string[];
     load?: (param: { containerID: string; view: MapView | HTMLElement | undefined; }) => Promise<any>;
 } | 'divider';
+interface Params {
+    idContainer: string;
+    idApp: string;
+    env: ENV;
+    view?: MapView
+};
 // ......................................... 1
 const DesignData: LinkInfo = {
     id: 'Design-and-Data', env: ENV.DEFAULT, keywords: ['data design lecture computational design gis vector raster data thinking process'], subLinks: [
@@ -38,7 +38,6 @@ const ProgrammingDataProcess: LinkInfo = {
         'divider',
         { id: '[Cheat Sheet] Python, List, Data Types, Class, Pandas, Numpy, SKlearn', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../links/External-Cheat-Sheet-A').then(({ Solution }) => { return new Solution(param.view as HTMLElement) }); } },
         { id: '[Cheat Sheet] Machine Learning, Deep Learning, Artificial Intelligence, Keras, Neural Networks, Skicit-learn, Pandas Data Science', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../links/External-Cheat-Sheet-B').then(({ Solution }) => { return new Solution(param.view as HTMLElement) }); } },
-  
     ]
 };
 // ......................................... 2
@@ -52,6 +51,8 @@ const Geometry: LinkInfo = {
 };
 const GeometryImplementation: LinkInfo = {
     id: 'Geometry-Implementation', env: ENV.DEFAULT, keywords: ['geometry computation design data'], subLinks: [
+        { id: 'Geometry-for-Design', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../links/External-Geometry-for-design').then(({ Solution }) => { return new Solution(param.view as HTMLElement) }); } },
+        'divider',
         { id: 'Geometry-(Python)', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../links/Link-Geometry-Python-Code').then(({ Solution }) => { return new Solution(param.view as HTMLDivElement) }); } },
         'divider',
         { id: 'Canvas-Point-Circle', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../../PART_04_Geometry_Data/LAB_Web_01_Point_Circle').then(({ Solution }) => { return new Solution(param.view as HTMLDivElement) }); } },
@@ -66,8 +67,6 @@ const GeometryImplementation: LinkInfo = {
         { id: 'Graph', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../../PART_04_Geometry_Data/LAB_Web_08_Graph').then(({ Solution }) => { return new Solution(param.view as HTMLDivElement) }); } },
         { id: 'Pixel', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../../PART_04_Geometry_Data/LAB_Web_09_Pixel').then(({ Solution }) => { return new Solution(param.view as HTMLDivElement) }); } },
         { id: 'Voxel', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../../PART_04_Geometry_Data/LAB_Web_10_Voxel').then(({ Solution }) => { return new Solution(param.view as HTMLDivElement) }); } },
-        'divider',
-        { id: 'Geometry for design', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../links/External-Geometry-for-design').then(({ Solution }) => { return new Solution(param.view as HTMLElement) }); } },
     ]
 };
 // ......................................... 3

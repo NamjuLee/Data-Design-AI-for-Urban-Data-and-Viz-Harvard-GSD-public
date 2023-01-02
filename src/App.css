@@ -134,7 +134,7 @@ figure, figcaption {
 /* ---------------------------- */
 
 .title {
- margin-top: 50px;
+ margin-top: 20px;
  margin-bottom: 50px;
  font-size: max(62px, calc(13vw - 120px));
  text-transform: uppercase;
@@ -154,7 +154,7 @@ figure, figcaption {
  .title {
    /* font-size: 65px; */
    font-size: max(48px, calc(3vw));
-   padding-top: 50px;
+   padding-top: 20px;
  }
 
 }
