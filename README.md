@@ -28,7 +28,7 @@ Class materials and homework
 
 **LOCATION:** 
 
-Gund Hall Room 510
+Gund Hall Room 520
 
 **DATE:** 
 
