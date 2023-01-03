@@ -277,7 +277,7 @@ Computational Design Thinking for Designers: https://nj-namju.medium.com/computa
 
 #### Install React, Typescript, and Dependencies
 
-`yarn` or `npm run install`
+`yarn` or `npm install`
 
 #### Run the app
 
