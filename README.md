@@ -28,7 +28,7 @@ Class materials and homework
 
 **LOCATION:** 
 
-TBA
+Gund Hall Room 510
 
 **DATE:** 
 
