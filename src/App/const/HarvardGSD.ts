@@ -92,8 +92,6 @@ LAB 04 - Matrix, Numpy basic
 
 LAB 05 - Pandas basic
 
-
-
 ---------------------------------
 
 #### 3. Vector and Raster as design data
@@ -122,6 +120,8 @@ LAB 04 - Raster Data, Image, Matrix,
 
 LAB 05 - Color, Pixel, Voxel
 
+LAB 06 - Web implementation: [Point](https://namjulee.github.io/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/lab/geometry-implementation/canvas-point-circle), [Line](https://namjulee.github.io/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/lab/geometry-implementation/canvas-line-polyline),[Interactive Polyline](https://namjulee.github.io/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/lab/geometry-implementation/canvas-polyline-mouse-input), [Polygon](https://namjulee.github.io/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/lab/geometry-implementation/canvas-polygon), [Mesh](https://namjulee.github.io/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/lab/geometry-implementation/three-mesh), [Geometry as data structure](http://localhost:3000/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/lab/geometry-implementation/geometry-as-data-structure), [Pixel map](http://localhost:3000/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/lab/geometry-implementation/pixel), [Graph](http://localhost:3000/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/lab/geometry-implementation/graph) and [Voxel map](http://localhost:3000/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/lab/geometry-implementation/voxel)
+
 ---------------------------------
 
 #### 5. Introduction to AI models and Implementations
@@ -148,9 +148,15 @@ LAB 02 - Multiplication table
 
 LAB 03 - Smart Drawing 
 
-LAB 04 - Digital Texture prediction, 
+LAB 04 - Digital Texture prediction
 
-Examples - Map classification, GAN ...
+LAB 05 - Map Classifier
+
+LAB 06 - Data Reference(Vector & Raster) & Basic Models(Regression & Classification: Linear Regression, Ridge, Lasso, ElasticNet, Naive Bayes, Polynomial Regression, KNN, Logistic Regression, Decision Tree Classifier, SVM, ANN, CNN)
+
+LAB 07 - Examples - Map classification, GAN ...
+
+LAB 08 - Web implementation(TensorflowJS: [Regression](https://namjulee.github.io/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/lab/ml-models/polynomial-regression), [Classification](https://namjulee.github.io/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/lab/ml-models/tfjs-iris), [SmartDrawing](https://namjulee.github.io/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/lab/ml-models/smart-drawing), [t-SNE](https://namjulee.github.io/njs-lab-public/lab/machine-learning/storymaps-tsne-viz), [Image](https://namjulee.github.io/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/lab/ml-models/image-face), [Video](https://namjulee.github.io/njs-lab-public/lab/machine-learning/tf-video-face))
 
 ---------------------------------
 
@@ -187,9 +193,9 @@ LAB 07 - Networks for Boston, LA, and Redlands
 
 **WORKSHOP**
 
-LAB 01 - Visualization, 
+LAB 01 - [Visualization](https://namjulee.github.io/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/lab/third-place-viz/third-place-init), 
 
-LAB 02 - Model implementation(Boston, LA, and Redlands)
+LAB 02 - [Model implementation](https://namjulee.github.io/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/lab/third-place-viz/third-place-result)(Boston, LA, and Redlands)
 
 ---------------------------------
 
@@ -205,9 +211,9 @@ Pipeline for visualization, Mapping, Methodology, and Implementation
 
 Implementing digital mapping and visualization on the web environment, Understanding boilerplate code and the pipeline
 
-LAB 01 - Typescript Basic
+LAB 01 - [Typescript Basic](https://namjulee.github.io/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/lab/typescript-lab)
 
-LAB 02 - Boilerplate code and the pipeline
+LAB 02 - Boilerplate([2D](https://namjulee.github.io/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/lab/digital-mapping-lab/template), [3D](https://namjulee.github.io/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/lab/3d-viz-for-gis/three-starter)) code and the pipeline
 
 ---------------------------------
 
@@ -225,11 +231,11 @@ ArcGIS JSAPI / MapboxGL / HTML Canvas / njsCore / Typescript ...
 Point, Line, Polygon, Interaction, Bin, Color Computation Blending mode using HTML Canvas 
 
 
-LAB 01 - Basic visualization
+LAB 01 - [Basic visualization](https://namjulee.github.io/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/lab/digital-mapping-lab/json-line)
 
 LAB 02 - Visualization Vector and Raster
 
-LAB 03 - Visualization analysis methods and tools
+LAB 03 - Visualization analysis methods([Bin](https://namjulee.github.io/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/lab/digital-mapping-lab/dynamic-bins)) and tools([Graph](https://namjulee.github.io/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/lab/digital-mapping-lab/a-start-grid), [Network Analysis](https://namjulee.github.io/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/lab/digital-mapping-lab/network-search(bfs)))
 
 ---------------------------------
 
@@ -242,11 +248,11 @@ We will learn how to visualize data: vector(Point, Line Polyline Polygon or Mesh
 
 **WORKSHOP**
 
-LAB 01 - THREE JS basic and the pipeline
+LAB 01 - [THREE JS basic](https://namjulee.github.io/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/lab/3d-viz-for-gis/three-primitive) and the [pipeline](https://namjulee.github.io/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/lab/3d-viz-for-gis/three-starter)
 
-LAB 02 - Point, Line Polyline, Mesh (Rhino Grasshopper)
+LAB 02 - [Point](https://namjulee.github.io/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/lab/3d-viz-for-gis/three-point), [Line, Polyline](https://namjulee.github.io/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/lab/3d-viz-for-gis/three-line-polyline), [Mesh]((https://namjulee.github.io/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/lab/3d-viz-for-gis/three-mesh-terrain)) [(Rhino Grasshopper)](https://namjulee.github.io/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/lab/3d-viz-for-gis/three-mesh-rhino-geo)
 
-LAB 03 - Slowzone project review
+LAB 03 - [Slowzone project review](https://namjulee.github.io/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/lab/3d-viz-for-gis/slow-zone-viz-3d)
 
 
 ---
