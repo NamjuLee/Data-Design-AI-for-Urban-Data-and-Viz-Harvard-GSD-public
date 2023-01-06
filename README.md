@@ -123,7 +123,7 @@ LAB 04 - Raster Data, Image, Matrix,
 
 LAB 05 - Color, Pixel, Voxel
 
-LAB 06 - Web implementation: [Point](https://namjulee.github.io/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/lab/geometry-implementation/canvas-point-circle), [Line](https://namjulee.github.io/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/lab/geometry-implementation/canvas-line-polyline),[Interactive Polyline](https://namjulee.github.io/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/lab/geometry-implementation/canvas-polyline-mouse-input), [Polygon](https://namjulee.github.io/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/lab/geometry-implementation/canvas-polygon), [Mesh](https://namjulee.github.io/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/lab/geometry-implementation/three-mesh)
+LAB 06 - Web implementation: [Point](https://namjulee.github.io/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/lab/geometry-implementation/canvas-point-circle), [Line](https://namjulee.github.io/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/lab/geometry-implementation/canvas-line-polyline),[Interactive Polyline](https://namjulee.github.io/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/lab/geometry-implementation/canvas-polyline-mouse-input), [Polygon](https://namjulee.github.io/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/lab/geometry-implementation/canvas-polygon), [Mesh](https://namjulee.github.io/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/lab/geometry-implementation/three-mesh), [Geometry as data structure](http://localhost:3000/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/lab/geometry-implementation/geometry-as-data-structure), [Pixel map](http://localhost:3000/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/lab/geometry-implementation/pixel), [Graph](http://localhost:3000/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/lab/geometry-implementation/graph) and [Voxel map](http://localhost:3000/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/lab/geometry-implementation/voxel)
 
 ---------------------------------
 
@@ -240,7 +240,7 @@ LAB 01 - [Basic visualization](https://namjulee.github.io/Data-Design-AI-for-Urb
 
 LAB 02 - Visualization Vector and Raster
 
-LAB 03 - Visualization analysis methods([Bin](https://namjulee.github.io/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/lab/digital-mapping-lab/dynamic-bins)) and tools([Graph](https://namjulee.github.io/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/lab/digital-mapping-lab/a-start-grid))
+LAB 03 - Visualization analysis methods([Bin](https://namjulee.github.io/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/lab/digital-mapping-lab/dynamic-bins)) and tools([Graph](https://namjulee.github.io/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/lab/digital-mapping-lab/a-start-grid), [Network Analysis](https://namjulee.github.io/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/lab/digital-mapping-lab/network-search(bfs)))
 
 ---------------------------------
 
