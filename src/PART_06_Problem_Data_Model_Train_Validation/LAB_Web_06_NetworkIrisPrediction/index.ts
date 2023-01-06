@@ -20,6 +20,7 @@ export class Solution {
         // You code goes here for one time operation
 
         this.renderer = new Renderer(div);
+        this.renderer.canvas.style.position = 'unset';
 
         // !! you should execute it for rendering
         // this.start();
@@ -40,12 +41,18 @@ export class Renderer extends RendererCanvas {
     tfModel: TFModel;
     accList: number[] = []
     lossList: number[] = []
+    divText: HTMLDivElement;
     constructor(divHost: HTMLDivElement) {
         super(divHost);
+        this.canvas.style.position = 'unset';
         // TODO
         // You code goes here for one time operation
 
         this.tfModel = new TFModel();
+
+        this.divText = document.createElement('div');
+        this.divHost.appendChild(this.divText);
+        this.divText.textContent = 'title';
 
         // !! you should execute it for rendering
         this.start();
@@ -60,17 +67,21 @@ export class Renderer extends RendererCanvas {
         let minX = 0
         let maxX = this.canvas.width;
         
-        let minY = Number.MAX_VALUE;
+        let minY = 0;
         let maxY = Number.MIN_VALUE;
-        
+
+        if (this.tfModel.hist.length > 0){
+            this.divText.textContent = `acc: ${ parseFloat(this.tfModel.hist[this.tfModel.hist.length -1].acc).toFixed(3)}, loss: ${parseFloat(this.tfModel.hist[this.tfModel.hist.length -1].loss).toFixed(3)}`;
+        }
 
         for(let i = 0 ; i < this.tfModel.hist.length; ++i) {
+
             // console.log(this.tfModel.hist)
             let acc = this.tfModel.hist[i].acc;
             let loss = this.tfModel.hist[i].loss;
 
-            if (minY > acc) minY = acc;
-            if (minY > loss) minY = loss;
+            // if (minY > acc) minY = acc;
+            // if (minY > loss) minY = loss;
             
             if (maxY < acc) maxY = acc;
             if (maxY < loss) maxY = loss;
