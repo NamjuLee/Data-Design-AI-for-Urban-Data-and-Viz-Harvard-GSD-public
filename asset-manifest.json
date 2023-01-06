@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/static/css/main.8fd9488e.css",
-    "main.js": "/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/static/js/main.7b5e77f6.js",
+    "main.js": "/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/static/js/main.36d47abd.js",
     "static/js/9426.277e2495.chunk.js": "/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/static/js/9426.277e2495.chunk.js",
     "static/js/2866.8489abff.chunk.js": "/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/static/js/2866.8489abff.chunk.js",
     "static/js/7037.475a43c2.chunk.js": "/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/static/js/7037.475a43c2.chunk.js",
@@ -33,7 +33,8 @@
     "static/js/361.3b4bab10.chunk.js": "/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/static/js/361.3b4bab10.chunk.js",
     "static/js/480.257232e3.chunk.js": "/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/static/js/480.257232e3.chunk.js",
     "static/js/8720.1a00ca38.chunk.js": "/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/static/js/8720.1a00ca38.chunk.js",
-    "static/js/4031.6a777cc0.chunk.js": "/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/static/js/4031.6a777cc0.chunk.js",
+    "static/js/4031.2fd9371a.chunk.js": "/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/static/js/4031.2fd9371a.chunk.js",
+    "static/js/2266.c70359ab.chunk.js": "/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/static/js/2266.c70359ab.chunk.js",
     "static/js/3426.ea373ce0.chunk.js": "/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/static/js/3426.ea373ce0.chunk.js",
     "static/js/7130.f8d51e9d.chunk.js": "/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/static/js/7130.f8d51e9d.chunk.js",
     "static/js/3679.70da1863.chunk.js": "/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/static/js/3679.70da1863.chunk.js",
@@ -43,7 +44,7 @@
     "static/js/4036.672f0840.chunk.js": "/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/static/js/4036.672f0840.chunk.js",
     "static/js/5397.4f0d2541.chunk.js": "/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/static/js/5397.4f0d2541.chunk.js",
     "static/js/5725.d3c4c921.chunk.js": "/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/static/js/5725.d3c4c921.chunk.js",
-    "static/js/248.c255d181.chunk.js": "/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/static/js/248.c255d181.chunk.js",
+    "static/js/248.341870e3.chunk.js": "/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/static/js/248.341870e3.chunk.js",
     "static/js/1622.342c8ce4.chunk.js": "/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/static/js/1622.342c8ce4.chunk.js",
     "static/js/7329.3d04fa14.chunk.js": "/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/static/js/7329.3d04fa14.chunk.js",
     "static/js/8327.cc021872.chunk.js": "/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/static/js/8327.cc021872.chunk.js",
@@ -323,10 +324,10 @@
     "static/js/6876.03f3e0d4.chunk.js": "/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/static/js/6876.03f3e0d4.chunk.js",
     "static/js/7898.73aac647.chunk.js": "/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/static/js/7898.73aac647.chunk.js",
     "static/js/172.b928d527.chunk.js": "/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/static/js/172.b928d527.chunk.js",
-    "static/js/386.53a57623.chunk.js": "/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/static/js/386.53a57623.chunk.js",
+    "static/js/386.1d102eee.chunk.js": "/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/static/js/386.1d102eee.chunk.js",
     "index.html": "/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/index.html",
     "main.8fd9488e.css.map": "/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/static/css/main.8fd9488e.css.map",
-    "main.7b5e77f6.js.map": "/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/static/js/main.7b5e77f6.js.map",
+    "main.36d47abd.js.map": "/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/static/js/main.36d47abd.js.map",
     "9426.277e2495.chunk.js.map": "/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/static/js/9426.277e2495.chunk.js.map",
     "2866.8489abff.chunk.js.map": "/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/static/js/2866.8489abff.chunk.js.map",
     "7037.475a43c2.chunk.js.map": "/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/static/js/7037.475a43c2.chunk.js.map",
@@ -358,7 +359,8 @@
     "361.3b4bab10.chunk.js.map": "/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/static/js/361.3b4bab10.chunk.js.map",
     "480.257232e3.chunk.js.map": "/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/static/js/480.257232e3.chunk.js.map",
     "8720.1a00ca38.chunk.js.map": "/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/static/js/8720.1a00ca38.chunk.js.map",
-    "4031.6a777cc0.chunk.js.map": "/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/static/js/4031.6a777cc0.chunk.js.map",
+    "4031.2fd9371a.chunk.js.map": "/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/static/js/4031.2fd9371a.chunk.js.map",
+    "2266.c70359ab.chunk.js.map": "/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/static/js/2266.c70359ab.chunk.js.map",
     "3426.ea373ce0.chunk.js.map": "/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/static/js/3426.ea373ce0.chunk.js.map",
     "7130.f8d51e9d.chunk.js.map": "/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/static/js/7130.f8d51e9d.chunk.js.map",
     "3679.70da1863.chunk.js.map": "/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/static/js/3679.70da1863.chunk.js.map",
@@ -368,7 +370,7 @@
     "4036.672f0840.chunk.js.map": "/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/static/js/4036.672f0840.chunk.js.map",
     "5397.4f0d2541.chunk.js.map": "/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/static/js/5397.4f0d2541.chunk.js.map",
     "5725.d3c4c921.chunk.js.map": "/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/static/js/5725.d3c4c921.chunk.js.map",
-    "248.c255d181.chunk.js.map": "/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/static/js/248.c255d181.chunk.js.map",
+    "248.341870e3.chunk.js.map": "/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/static/js/248.341870e3.chunk.js.map",
     "1622.342c8ce4.chunk.js.map": "/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/static/js/1622.342c8ce4.chunk.js.map",
     "7329.3d04fa14.chunk.js.map": "/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/static/js/7329.3d04fa14.chunk.js.map",
     "8327.cc021872.chunk.js.map": "/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/static/js/8327.cc021872.chunk.js.map",
@@ -644,10 +646,10 @@
     "6876.03f3e0d4.chunk.js.map": "/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/static/js/6876.03f3e0d4.chunk.js.map",
     "7898.73aac647.chunk.js.map": "/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/static/js/7898.73aac647.chunk.js.map",
     "172.b928d527.chunk.js.map": "/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/static/js/172.b928d527.chunk.js.map",
-    "386.53a57623.chunk.js.map": "/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/static/js/386.53a57623.chunk.js.map"
+    "386.1d102eee.chunk.js.map": "/Data-Design-AI-for-Urban-Data-and-Viz-Harvard-GSD-public/static/js/386.1d102eee.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8fd9488e.css",
-    "static/js/main.7b5e77f6.js"
+    "static/js/main.36d47abd.js"
   ]
 }
