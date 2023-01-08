@@ -198,6 +198,12 @@ export const LAB_LINKS: LinkInfo[] = [
     ThreeVisualization,
     'divider',        
     { id: 'Reference', env: ENV.DEFAULT, keywords: [], load: (param) => { return import('../links/External-Reference').then(({ Solution }) => { return new Solution(param.view as HTMLDivElement); }); } },
+      'divider', 
+    {id: 'My-work', env: ENV.DEFAULT, keywords: ['3d visualization gis, point, line, polyline, polygon, mesh'], subLinks: [
+        { id: 'my-mapping-2d', env: ENV.JSAPI, keywords: [], load: (param) => { return import('../../PART_12_My_Work/01_P_1').then(({ Solution }) => { return new Solution(param.view) }); } },
+        { id: 'my-mapping-3d', env: ENV.THREE, keywords: [], load: (param) => { return import('../../PART_12_My_Work/02_p_3').then(({ Solution }) => { return new Solution(param.containerID) }); } },
+    ]
+    }
 ];
 const generateLookupTable = () => {
     const lookupTable = {}
