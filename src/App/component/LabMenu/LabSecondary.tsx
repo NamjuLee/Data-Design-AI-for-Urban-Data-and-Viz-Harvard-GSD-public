@@ -1,5 +1,5 @@
 import { Outlet } from 'react-router-dom'
-import { LinkInfo } from '../../lab';
+import { LinkInfo } from '../../Lab';
 import LinkList from '../LinkList'
 
 export const LabSecondary = ({ title, subLinks }: { title: string, subLinks: LinkInfo[] }) => {

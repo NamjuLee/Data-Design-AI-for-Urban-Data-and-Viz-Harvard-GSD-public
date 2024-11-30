@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 export const LabPrimary = ({id, env}) => {
   const idContainer = 'container-lab';
   useEffect(() => {
-    import('../../lab').then(({ ControllerLabs }) => { 
+    import('../../Lab').then(({ ControllerLabs }) => { 
         ControllerLabs.init(idContainer, id, env)}
       );
    });
